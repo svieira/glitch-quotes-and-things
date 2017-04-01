@@ -13,8 +13,17 @@ function randomColor() {
   return Color('#C33');
 }
 
+function getColor(color) {
+  if (!color) return randomColor();
+  try {
+    return Color(color);
+  } catch (e) {
+    console.log('Unable to create a color for', color, 'due to', e);
+  }
+}
+
 app.post("/color", function (request, response) {
-  console.log('Got a post request');
+  console.log('Got a post request with', request.body.text);
   var color = Color(request.body.text) || randomColor();
   new Jimp(128, 128, color.rgbNumber(), (err, image) => {
     if (err) console.warn(err);
@@ -22,7 +31,8 @@ app.post("/color", function (request, response) {
       if (err) console.warn(err);
       console.log('responding with', img)
       response.json({
-        text: `![The color ${color.string()}](${img})`
+        response_type: 'in_channel',
+        text: `![The color ${color.hex()}](${img})`
       });
     });
   });
