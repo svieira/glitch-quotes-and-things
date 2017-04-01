@@ -14,11 +14,15 @@ function randomColor() {
 }
 
 app.post("/color", function (request, response) {
+  console.log('Got a post request');
   var color = Color(request.body.text) || randomColor();
   new Jimp(128, 128, color.rgbNumber(), (err, image) => {
-    image.getBase64(Jimp.MIME_PNG, (err, img) => {
+    if (err) console.warn(err);
+    image.getBase64(Jimp.MIME_PNG, (err, img) => {    
+      if (err) console.warn(err);
+      console.log('responding with', img)
       response.json({
-        text: `![The color ${color}](${img})`
+        text: `![The color ${color.string()}](${img})`
       });
     });
   });
