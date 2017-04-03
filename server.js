@@ -27,25 +27,40 @@ function getColor(color) {
 }
 
 const WHITE = Color('#fff'), BLACK = Color('#000');
-const isColor = s => /^\s*(#[0-9a-f]{3,8}|(rgba?|hsla?|hwba?)\([0-9.,%\s]+\))\s*$/i.test(s)
-
-function colorHandler(request, response) {
-  var color = request.body && request.body.text;
-  console.log('Got a post request with', color);
-  color = getColor(color);
-  var inverseColor = color.light() ? BLACK : WHITE;
-  var svg = `
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="64" height="64" viewBox="0 0 100 100">
-  <rect x="0" y="0" height="100" width="100"
-          style="fill: ${color.hex().toLowerCase()};"/>
-  <text
+const SIZES = {
+  Large: {
+    width: 64, height: 64
+  },
+  Small: {
+    width: 16, height: 16
+  }
+};
+const colorStringLike = /(#[0-9a-f]{3,8}|(rgba?|hsla?|hwba?)\([0-9.,%\s]+\))/ig
+const isColor = s => s.replace(colorStringLike, '').trim().length > 0;
+const template = ({color, size = SIZES.Large}) => {
+  const inverseColor = color.light() ? BLACK : WHITE;
+  const text = size === SIZES.Small ? '' : `
+<text
     x="50%" y="50%" alignment-baseline="middle" text-anchor="middle"
     style="font-family: monospace; font-weight: bold; fill: ${inverseColor.hex()};">${color.hex()}</text>
+`.trim();
+  return `
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="${size.width}" height="${size.height}" viewBox="0 0 100 100">
+  <rect x="0" y="0" height="100" width="100"
+          style="fill: ${color.hex().toLowerCase()};"/>
+  ${text}
 </svg>
 `.trim();
+}
+
+function colorHandler(request, response) {
+  var [color,  = request.body && request.body.text || '';
+  console.log('Got a post request with', color);
+  color = getColor(color);
+  var svg = template({color});
   var uriSvg = 'data:image/svg+xml;base64,' + new Buffer(svg).toString('base64');
-  console.log('responding with', color.hex(), inverseColor.hex());
+  console.log('responding with', color.hex());
   response.json({
     response_type: 'in_channel',
     text: `![The color ${color.hex()}](${uriSvg})`
