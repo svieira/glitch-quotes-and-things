@@ -30,22 +30,19 @@ function getColor(color) {
   }
 }
 
+const WHITE = Color('#fff'), BLACK = Color('#000');
+
 function colorHandler(request, response) {
   var color = request.body && request.body.text;
   console.log('Got a post request with', color);
   color = getColor(color);
-  var inverseColor = Color(color).negate();
-  if (color.light()) {
-    inverseColor.darken(0.75);
-  } else {
-    inverseColor.lighten(0.75);
-  }
-  if (color.contrast(inverseColor) < 18) {
-    if (color.constrast(Color('')))
-  }
+  var inverseColor = color.light() ? BLACK : WHITE;
   var svg = `
 <svg xmlns="http://www.w3.org/2000/svg"
      width="64" height="64" viewBox="0 0 100 100">
+  <style type="text/css">
+    text:hover { text-decoration: underline; }
+  </style>
   <rect x="0" y="0" height="100" width="100"
           style="fill: ${color.hex().toLowerCase()};"/>
   <text
@@ -54,7 +51,7 @@ function colorHandler(request, response) {
 </svg>
 `.trim();
   var uriSvg = 'data:image/svg+xml;base64,' + new Buffer(svg).toString('base64');
-  console.log('responding with', color.hex(), color.rgb().string());
+  console.log('responding with', color.hex(), inverseColor.hex());
   response.json({
     response_type: 'in_channel',
     text: `![The color ${color.hex()}](${uriSvg})`
