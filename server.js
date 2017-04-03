@@ -27,7 +27,7 @@ function getColor(color) {
 }
 
 const WHITE = Color('#fff'), BLACK = Color('#000');
-const isColor = s => /^\s*\s*$/i.test(s)
+const isColor = s => /^\s*(#[0-9a-f]{3,8}|(rgba?|hsla?|hwba?)\([0-9.,%\s]+\))\s*$/i.test(s)
 
 function colorHandler(request, response) {
   var color = request.body && request.body.text;
