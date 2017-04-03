@@ -38,9 +38,7 @@ const SIZES = {
 
 const colorStringLike = /(#[0-9a-f]{3,8}|(rgba?|hsla?|hwba?)\([0-9.,%\s]+\))/ig
 
-const isSingleColor = s => {
-  s.replace(colorStringLike, '').trim().length > 0 || /^\s*[a-z0-9]+\s*$/i.test(s)
-  ;
+const isSingleColor = s => s.replace(colorStringLike, '').trim().length <= 0 || /^\s*[a-z0-9]+\s*$/i.test(s);
 
 const template = ({color, size = SIZES.Large}) => {
   const inverseColor = color.light() ? BLACK : WHITE;
