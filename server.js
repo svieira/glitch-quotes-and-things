@@ -30,7 +30,8 @@ app.post("/color", function (request, response) {
     if (err) console.warn(err);
     image.getBase64(Jimp.MIME_PNG, (err, img) => {    
       if (err) console.warn(err);
-      console.log('responding with', color.hex(), color.rgb().string(), color.rgbNumber().toString(16))
+      console.log('responding with', color.hex(), color.rgb().string(), color.rgbNumber().toString(16));
+      console.log(img);
       response.json({
         response_type: 'in_channel',
         text: `![The color ${color.hex()}](${img})`
