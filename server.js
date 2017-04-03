@@ -35,8 +35,13 @@ const SIZES = {
     width: 16, height: 16
   }
 };
+
 const colorStringLike = /(#[0-9a-f]{3,8}|(rgba?|hsla?|hwba?)\([0-9.,%\s]+\))/ig
-const isColor = s => s.replace(colorStringLike, '').trim().length > 0;
+
+const isSingleColor = s => {
+  s.replace(colorStringLike, '').trim().length > 0 || /^\s*[a-z0-9]+\s*$/i.test(s)
+  ;
+
 const template = ({color, size = SIZES.Large}) => {
   const inverseColor = color.light() ? BLACK : WHITE;
   const text = size === SIZES.Small ? '' : `
@@ -54,16 +59,28 @@ const template = ({color, size = SIZES.Large}) => {
 `.trim();
 }
 
-function colorHandler(request, response) {
-  var [color,  = request.body && request.body.text || '';
-  console.log('Got a post request with', color);
+const toDataUri = svg => 'data:image/svg+xml;base64,' + new Buffer(svg).toString('base64');
+
+function standAloneColorResponse(color) {
   color = getColor(color);
-  var svg = template({color});
-  var uriSvg = 'data:image/svg+xml;base64,' + new Buffer(svg).toString('base64');
-  console.log('responding with', color.hex());
+  const svg = template({color});
+  const uriSvg = toDataUri(svg);
+  return `![The color ${color.hex()}](${uriSvg})`;
+}
+
+function multipleColorResponse(color) {
+  return '# Multiple colors detected\n' + color;
+}
+
+
+function colorHandler(request, response) {
+  var color = (request.body && request.body.text || '');
+  console.log('Got a request with', color);
+
+  const text = isSingleColor(color) ? standAloneColorResponse(color) : multipleColorResponse(color);
   response.json({
     response_type: 'in_channel',
-    text: `![The color ${color.hex()}](${uriSvg})`
+    text
   });
 }
 
