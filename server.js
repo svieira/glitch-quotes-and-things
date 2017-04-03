@@ -9,8 +9,16 @@ app.use(
   formMiddleware.urlencoded({ extended: true })
 );
 
+function randomRgbComponent() {
+  return Math.floor(Math.random() * 255);
+}
+
 function randomColor() {
-  return Color('#F00');
+  return Color({
+    r: randomRgbComponent(),
+    g: randomRgbComponent(),
+    b: randomRgbComponent()
+  });
 }
 
 function getColor(color) {
