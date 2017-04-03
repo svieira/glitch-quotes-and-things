@@ -40,9 +40,6 @@ function colorHandler(request, response) {
   var svg = `
 <svg xmlns="http://www.w3.org/2000/svg"
      width="64" height="64" viewBox="0 0 100 100">
-  <style type="text/css">
-    text:hover { text-decoration: underline; }
-  </style>
   <rect x="0" y="0" height="100" width="100"
           style="fill: ${color.hex().toLowerCase()};"/>
   <text
