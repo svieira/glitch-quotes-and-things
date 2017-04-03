@@ -42,7 +42,7 @@ function colorHandler(request, response) {
           style="stroke:#ff0000; fill: ${color.hex().toLowerCase()};"/>
 </svg>
 `.trim();
-  var uriSvg = 'data:img/text+svg;base64,' + new Buffer(svg).toString('base64');
+  var uriSvg = 'data:image/svg+xml;base64,' + new Buffer(svg).toString('base64');
   new Jimp(64, 64, color.rgbNumber(), (err, image) => {
     if (err) console.warn(err);
     image.getBase64(Jimp.MIME_PNG, (err, img) => {    
