@@ -31,18 +31,18 @@ function getColor(color) {
   }
 }
 
-app.post("/color", function (request, response) {
-  console.log('Got a post request with', request.body.text);
-  var color = getColor(request.body.text);
+function colorHandler(request, response) {
+  var color = request.body && request.body.text;
+  console.log('Got a post request with', color);
+  color = getColor(color);
   var svg = `
 <svg xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
      width="64" height="64" viewBox="0 0 100 100">
-    <rect x="10" y="10" height="100" width="100"
-          style="stroke:#ff0000; fill: ${color.hex().toLowerCase()}"/>
+    <rect x="0" y="0" height="100" width="100"
+          style="stroke:#ff0000; fill: ${color.hex().toLowerCase()};"/>
 </svg>
 `.trim();
-  var uriSvg = 'data:img/svg;base64,' + new Buffer(svg).toString('base64');
+  var uriSvg = 'data:img/text+svg;base64,' + new Buffer(svg).toString('base64');
   new Jimp(64, 64, color.rgbNumber(), (err, image) => {
     if (err) console.warn(err);
     image.getBase64(Jimp.MIME_PNG, (err, img) => {    
@@ -55,7 +55,10 @@ app.post("/color", function (request, response) {
       });
     });
   });
-});
+}
+
+app.get('/color', colorHandler);
+app.post('/color', colorHandler);
 
 var listener = app.listen(process.env.PORT, function () {
   console.log('Your app is listening on port ' + listener.address().port);
