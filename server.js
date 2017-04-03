@@ -34,6 +34,15 @@ function getColor(color) {
 app.post("/color", function (request, response) {
   console.log('Got a post request with', request.body.text);
   var color = getColor(request.body.text);
+  var svg = `
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="64" height="64" viewBox="0 0 100 100">
+    <rect x="10" y="10" height="100" width="100"
+          style="stroke:#ff0000; fill: ${color.hex().toLowerCase()}"/>
+</svg>
+`.trim();
+  var uriSvg = 'data:img/svg;base64,' + new Buffer(svg).toString('base64');
   new Jimp(64, 64, color.rgbNumber(), (err, image) => {
     if (err) console.warn(err);
     image.getBase64(Jimp.MIME_PNG, (err, img) => {    
@@ -42,7 +51,7 @@ app.post("/color", function (request, response) {
       console.log(img);
       response.json({
         response_type: 'in_channel',
-        text: `![The color ${color.hex()}](${img})`
+        text: `![The color ${color.hex()}](${img}) ![As an SVG](${uriSvg})`
       });
     });
   });
