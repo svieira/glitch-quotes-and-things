@@ -38,7 +38,9 @@ const SIZES = {
 
 const colorStringLike = /(#[0-9a-f]{3,8}|(rgba?|hsla?|hwba?)\([0-9.,%\s]+\))/ig
 
-const isSingleColor = s => s.replace(colorStringLike, '').trim().length <= 0 || /^\s*[a-z0-9]+\s*$/i.test(s);
+const isSingleColor = s => {
+  try { Color(s); return true; } catch (e) { return false; }
+};
 
 const template = ({color, size = SIZES.Large}) => {
   const inverseColor = color.light() ? BLACK : WHITE;
@@ -57,17 +59,26 @@ const template = ({color, size = SIZES.Large}) => {
 `.trim();
 }
 
+const mdTemplate = (svg, alt='') => `![${alt}](${toDataUri(svg)})`;
+
 const toDataUri = svg => 'data:image/svg+xml;base64,' + new Buffer(svg).toString('base64');
 
 function standAloneColorResponse(color) {
   color = getColor(color);
   const svg = template({color});
-  const uriSvg = toDataUri(svg);
-  return `![The color ${color.hex()}](${uriSvg})`;
+  return mdTemplate(svg, `The color ${color.hex()}`);
 }
 
-function multipleColorResponse(color) {
-  return '# Multiple colors detected\n' + color;
+function multipleColorResponse(str) {
+  const toMd = match => {
+    try {
+      const color = Color(match);
+      return mdTemplate(template({color, size: SIZES.Small})) + ' ' + match;
+    } catch (e) {
+      return match;
+    }
+  };
+  return str.replace(colorStringLike, toMd).replace(/\b[a-z]+\b/g, toMd);
 }
 
 
@@ -76,6 +87,7 @@ function colorHandler(request, response) {
   console.log('Got a request with', color);
 
   const text = isSingleColor(color) ? standAloneColorResponse(color) : multipleColorResponse(color);
+  console.log(text);
   response.json({
     response_type: 'in_channel',
     text
