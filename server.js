@@ -1,7 +1,6 @@
 const formMiddleware = require('body-parser');
 const Color = require('color');
 const express = require('express');
-const Jimp = require('jimp');
 
 const app = express();
 app.use(
@@ -38,22 +37,16 @@ function colorHandler(request, response) {
   var svg = `
 <svg xmlns="http://www.w3.org/2000/svg"
      width="64" height="64" viewBox="0 0 100 100">
-    <rect x="0" y="0" height="100" width="100"
+  <rect x="0" y="0" height="100" width="100"
           style="stroke:#ff0000; fill: ${color.hex().toLowerCase()};"/>
+  <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" style="font-weight: bold;">${color.hex()}</text>
 </svg>
 `.trim();
   var uriSvg = 'data:image/svg+xml;base64,' + new Buffer(svg).toString('base64');
-  new Jimp(64, 64, color.rgbNumber(), (err, image) => {
-    if (err) console.warn(err);
-    image.getBase64(Jimp.MIME_PNG, (err, img) => {    
-      if (err) console.warn(err);
-      console.log('responding with', color.hex(), color.rgb().string(), color.rgbNumber().toString(16));
-      console.log(img);
-      response.json({
-        response_type: 'in_channel',
-        text: `![The color ${color.hex()}](${img}) ![As an SVG](${uriSvg})`
-      });
-    });
+  console.log('responding with', color.hex(), color.rgb().string());
+  response.json({
+    response_type: 'in_channel',
+    text: `![The color ${color.hex()}](${uriSvg})`
   });
 }
 
