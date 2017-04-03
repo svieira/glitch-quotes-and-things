@@ -34,12 +34,23 @@ function colorHandler(request, response) {
   var color = request.body && request.body.text;
   console.log('Got a post request with', color);
   color = getColor(color);
+  var inverseColor = Color(color).negate();
+  if (color.light()) {
+    inverseColor.darken(0.75);
+  } else {
+    inverseColor.lighten(0.75);
+  }
+  if (color.contrast(inverseColor) < 18) {
+    if (color.constrast(Color('')))
+  }
   var svg = `
 <svg xmlns="http://www.w3.org/2000/svg"
      width="64" height="64" viewBox="0 0 100 100">
   <rect x="0" y="0" height="100" width="100"
-          style="stroke:#ff0000; fill: ${color.hex().toLowerCase()};"/>
-  <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" style="font-weight: bold;">${color.hex()}</text>
+          style="fill: ${color.hex().toLowerCase()};"/>
+  <text
+    x="50%" y="50%" alignment-baseline="middle" text-anchor="middle"
+    style="font-family: monospace; font-weight: bold; fill: ${inverseColor.hex()};">${color.hex()}</text>
 </svg>
 `.trim();
   var uriSvg = 'data:image/svg+xml;base64,' + new Buffer(svg).toString('base64');
