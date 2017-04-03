@@ -8,17 +8,13 @@ app.use(
   formMiddleware.urlencoded({ extended: true })
 );
 
-function randomRgbComponent() {
-  return Math.floor(Math.random() * 255);
-}
+const randomRgbComponent = () => Math.floor(Math.random() * 255);
 
-function randomColor() {
-  return Color({
-    r: randomRgbComponent(),
-    g: randomRgbComponent(),
-    b: randomRgbComponent()
-  });
-}
+const randomColor = () => Color({
+  r: randomRgbComponent(),
+  g: randomRgbComponent(),
+  b: randomRgbComponent()
+});
 
 function getColor(color) {
   if (!color) return randomColor();
@@ -31,6 +27,7 @@ function getColor(color) {
 }
 
 const WHITE = Color('#fff'), BLACK = Color('#000');
+const isColor = s => /^\s*\s*$/i.test(s)
 
 function colorHandler(request, response) {
   var color = request.body && request.body.text;
