@@ -4,9 +4,10 @@ const codeBlock = (code, language='') => '```${language}\n' + code + '\n```'
 
 const template = ({expression, result, type}) => {
   return `
+${codeBlock(expression, 'groovy')}
+${}
 ${codeBlock(result)}
-#### of ${type}
-${codeBlock(expression)}
+###### ${type}
 `.trim();
 }
 
@@ -18,16 +19,17 @@ module.exports = function expressionHandler(request, response) {
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
     },
-    body: '"' + expression.replace(/"/g, '\\"') + '"'
+    // treat the body as a JSON string
+    body: JSON.stringify(expression)
   }).then(res => res.json()).then(body => {
     response.json({
       response_type: 'in_channel',
-      text: codeBlock(expression) + '\n\n' + body.type + ':\n' + body.value
+      text: template({expression, type: body.type, result: body.value})
     })
   }).catch(err => {
     response.json({
       response_type: 'in_channel',
-      text: 'Error:\n' + err.toString()
+      text: template({expression, type: 'Error', result: err})
     });
   })
 };
