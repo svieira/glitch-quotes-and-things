@@ -1,5 +1,15 @@
 const fetch = require('node-fetch');
 
+const codeBlock = (code, language='') => '```${language}\n' + code + '\n```'
+
+const template = ({expression, result, type}) => {
+  return `
+${codeBlock(result)}
+#### of ${type}
+${codeBlock(expression)}
+`.trim();
+}
+
 module.exports = function expressionHandler(request, response) {
   const expression = request.body.text;
   console.log('Received', expression)
@@ -8,11 +18,11 @@ module.exports = function expressionHandler(request, response) {
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
     },
-    body: expression.replace(/"/g, '\\"')
-  }).then(res => res.text()).then(body => {
+    body: '"' + expression.replace(/"/g, '\\"') + '"'
+  }).then(res => res.json()).then(body => {
     response.json({
       response_type: 'in_channel',
-      text: body || body.type + ':\n' + body.value
+      text: codeBlock(expression) + '\n\n' + body.type + ':\n' + body.value
     })
   }).catch(err => {
     response.json({
