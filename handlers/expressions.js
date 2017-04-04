@@ -10,7 +10,7 @@ ${codeBlock(result)}
 ###### ${type}
 `.trim();
 }
-const quietFlag = /\b-?-(quiet|q|s|silent|me)\b/ig;
+const quietFlag = /-?-(quiet|q|s|silent|me)/ig;
 const isQuiet = s => quietFlag.test(s)
 
 module.exports = function expressionHandler(request, response) {
@@ -27,7 +27,8 @@ module.exports = function expressionHandler(request, response) {
   }).then(res => res.json()).then(body => {
     response.json({
       response_type,
-      text: template({expression, type: body.type, result: body.value})
+      text: template({expression, type: body.type, result: body.value}),
+      icon_url: 'http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/simple-red-glossy-icons-transport-travel/040910-simple-red-glossy-icon-transport-travel-transportation-sailboat.png'
     })
   }).catch(err => {
     response.json({
