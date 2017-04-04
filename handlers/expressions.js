@@ -27,8 +27,7 @@ module.exports = function expressionHandler(request, response) {
   }).then(res => res.json()).then(body => {
     response.json({
       response_type,
-      text: template({expression, type: body.type, result: body.value}),
-      icon_url: 'http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/simple-red-glossy-icons-transport-travel/040910-simple-red-glossy-icon-transport-travel-transportation-sailboat.png'
+      text: template({expression, type: body.type, result: body.value})
     })
   }).catch(err => {
     response.json({
