@@ -16,6 +16,7 @@ const isQuiet = s => quietFlag.test(s)
 module.exports = function expressionHandler(request, response) {
   const quiet = isQuiet(request.body.text);
   const expression = (quiet ? request.body.text.replace(quietFlag, '') : request.body.text).trim();
+  const username = request.body.user_name ? ` (${request.body.user_name})` : ''
   const response_type = quiet ? 'ephemeral' : 'in_channel';
   fetch('https://cy175v8jxb.execute-api.us-east-1.amazonaws.com/evaluatorPrototype/', {
     method: 'POST',
@@ -32,7 +33,9 @@ module.exports = function expressionHandler(request, response) {
   }).catch(err => {
     response.json({
       response_type,
-      text: template({expression, type: 'Error', result: err})
+      username: 'AEL v17.1' + username,
+      text: template({expression, type: 'Error', result: err}),
+      icon_url: 'https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fsail.png?1494364646623'
     });
   })
 };
