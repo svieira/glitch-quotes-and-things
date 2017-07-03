@@ -21,7 +21,10 @@ salmon
 const WORD_LENGTH = WORDS.length;
 
 function randomName(size = 4) {
-  
+  let result = [];
+  while (result.length < size) {
+    Math.random() *
+  }
 }
 
 module.exports = function appearInHandler(request, response) {
