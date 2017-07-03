@@ -17,6 +17,17 @@ apple
 grape
 tuna
 salmon
+pretzel
+king
+queen
+jack
+ace
+shovel
+trowel
+moth
+sand
+shell
+corn
 `.trim().split('\n');
 const WORD_LENGTH = WORDS.length;
 
