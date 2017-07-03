@@ -10,10 +10,17 @@ trim
 float
 boat
 chariot
+horse
+flute
+prune
+apple
+grape
+tuna
+salmon
 `.trim().split('\n');
 const WORD_LENGTH = WORDS.length;
 
-function randomName() {
+function randomName(size = 4) {
   
 }
 
