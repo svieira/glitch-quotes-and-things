@@ -23,12 +23,15 @@ const WORD_LENGTH = WORDS.length;
 function randomName(size = 4) {
   let result = [];
   while (result.length < size) {
-    Math.random() *
+    const index = Math.floor(Math.random() * WORD_LENGTH)
+    if (index === WORD_LENGTH || result.includes(WORDS[index])) continue;
+    result.push(WORDS[index]);
   }
+  return result.join('-');
 }
 
 module.exports = function appearInHandler(request, response) {
-  var roomName = (request.body && request.body.roomName || randomName());
+  var roomName = (request.body && request.body.text || randomName());
 
   const text = `[appear.in/${roomName}](https://appear.in/${roomName})`;
   response.json({
