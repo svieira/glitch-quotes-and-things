@@ -1,12 +1,10 @@
-const WORDS = `
+const NOUNS = `
 rabbit
 hat
 cat
 bird
-tame
 ship
 sail
-trim
 float
 boat
 chariot
@@ -34,25 +32,54 @@ sheep
 goat
 goldfish
 canary
-kind
-truthful
-red
-green
-blue
 silver
 gold
 ruby
 diamond
 finch
+python
+coffee
+tea
+tree
+brook
 `.trim().split('\n');
-const WORD_LENGTH = WORDS.length;
+const ADJECTIVES = `
+kind
+truthful
+running
+floating
+singing
+happy
+merry
+golden
+silvered
+ancient
+young
+tame
+fierce
+trim
+red
+green
+blue
+silver
+gold
+umber
+ocher
+sweet
+ruby
+diamond
+`.trim().split('\n');
 
 function randomName(size = 4) {
   let result = [];
+  let adjective = true;
   while (result.length < size) {
+    const WORDS = adjective ? ADJECTIVES : NOUNS;
+    const WORD_LENGTH = WORDS.length;
     const index = Math.floor(Math.random() * WORD_LENGTH)
     if (index === WORD_LENGTH || result.includes(WORDS[index])) continue;
     result.push(WORDS[index]);
+    adjective = !adjective;
   }
   return result.join('-');
 }
