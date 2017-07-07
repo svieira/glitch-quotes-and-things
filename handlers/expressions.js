@@ -1,5 +1,13 @@
 const fetch = require('node-fetch');
 
+const HELP = `
+## \`/sail EXPRESSION\`
+
+### Options
+* \`-h\`, \`--help\` - Show this screen
+* \`-q\`, \`--quiet\` - Return the results as an ephemeral messsage only you can see
+`.trim();
+
 const codeBlock = (code, language='') => '```${language}\n' + code + '\n```'
 
 const template = ({expression, result, type}) => {
@@ -12,8 +20,17 @@ ${codeBlock(result)}
 }
 const quietFlag = /-?-(quiet|q|s|silent|me)/ig;
 const isQuiet = s => quietFlag.test(s)
+const isHelp = s => /^\s*(-\s*h|-\s*-\s*help|\?)\s*$/i.test(s)
 
 module.exports = function expressionHandler(request, response) {
+  if (isHelp(request.body.text)) {
+    return response.json({
+      response_type: 'ephemeral',
+      username: 'AEL v17.1',
+      text: HELP,
+      icon_url: 'https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fsail.png?1494364646623'
+    });
+  }
   const quiet = isQuiet(request.body.text);
   const expression = (quiet ? request.body.text.replace(quietFlag, '') : request.body.text).trim();
   const username = request.body.user_name ? ` (${request.body.user_name})` : ''
