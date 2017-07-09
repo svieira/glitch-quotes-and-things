@@ -1,4 +1,5 @@
 const fetch = require('node-fetch');
+const withHelp = require('./with-help');
 
 const HELP = `
 ## \`/sail EXPRESSION\`
@@ -20,17 +21,11 @@ ${codeBlock(result)}
 }
 const quietFlag = /-?-(quiet|q|s|silent|me)/ig;
 const isQuiet = s => quietFlag.test(s)
-const isHelp = s => /^\s*(-\s*h|-\s*-\s*help|\?)\s*$/i.test(s)
 
-module.exports = function expressionHandler(request, response) {
-  if (isHelp(request.body.text)) {
-    return response.json({
-      response_type: 'ephemeral',
-      username: 'AEL v17.1',
-      text: HELP,
-      icon_url: 'https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fsail.png?1494364646623'
-    });
-  }
+const username = 'AEL v17.1';
+const icon_url = 'https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fsail.png?1494364646623';
+
+module.exports = withHelp({username, icon_url, text: HELP}, function expressionHandler(request, response) {
   const quiet = isQuiet(request.body.text);
   const expression = (quiet ? request.body.text.replace(quietFlag, '') : request.body.text).trim();
   const username = request.body.user_name ? ` (${request.body.user_name})` : ''
@@ -50,9 +45,8 @@ module.exports = function expressionHandler(request, response) {
   }).catch(err => {
     response.json({
       response_type,
-      username: 'AEL v17.1' + username,
       text: template({expression, type: 'Error', result: err}),
-      icon_url: 'https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fsail.png?1494364646623'
+      icon_url
     });
   })
-};
+});

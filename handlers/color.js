@@ -1,4 +1,12 @@
 const Color = require('color');
+const withHelp = require('./with-help');
+
+const HELP = `
+## \`/color\`
+
+Generate a color swatch - either using a single color or a message with as many colors as you desire!
+Supported colors include #rgb, #rrggbb, rgb, rgba, hsl, and CSS named colors.
+`.trim()
 
 const randomRgbComponent = () => Math.floor(Math.random() * 255);
 
@@ -74,7 +82,7 @@ function multipleColorResponse(str) {
 }
 
 
-module.exports = function colorHandler(request, response) {
+module.exports = withHelp({text: HELP}, function colorHandler(request, response) {
   var color = (request.body && request.body.text || '');
 
   const text = isSingleColor(color) ? standAloneColorResponse(color) : multipleColorResponse(color);
@@ -82,4 +90,4 @@ module.exports = function colorHandler(request, response) {
     response_type: 'in_channel',
     text
   });
-}
+});

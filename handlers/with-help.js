@@ -8,7 +8,7 @@ module.exports = function helpDecorator({username, text = DEFAULT_TEXT, icon_url
     const [request, response] = args;
     if (isHelp(request.body.text)) {
       username = username || `Help for ${request.body.command}`;
-      response.json({
+      return response.json({
         response_type,
         username,
         text,
