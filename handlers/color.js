@@ -2,10 +2,11 @@ const Color = require('color');
 const withHelp = require('./with-help');
 
 const HELP = `
-## \`/color\`
+## \`/color [color swatch | text containing colors]\`
 
 Generate a color swatch - either using a single color or a message with as many colors as you desire!
 Supported colors include #rgb, #rrggbb, rgb, rgba, hsl, and CSS named colors.
+Produces a random color swatch if called with no arguments.
 `.trim()
 
 const randomRgbComponent = () => Math.floor(Math.random() * 255);
