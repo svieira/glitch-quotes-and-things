@@ -1,6 +1,11 @@
 const Color = require('color');
 const withHelp = require('./with-help');
 
+// TODO: Add support for more colorish formats
+// fff (without the #) in a cleaner way
+// rr,gg,bb,aa? without the rgba wrapper
+// hh,ss,ll (is there any way to distinguish these?)
+
 const HELP = `
 ## \`/color [color swatch | text containing colors]\`
 
@@ -22,6 +27,7 @@ function getColor(color) {
   try {
     return Color(color);
   } catch (e) {
+    try { return Color('#' + color); } catch (e) { /* ignored */ }
     console.log('Unable to create a color for', color, 'due to', e);
     return randomColor();
   }
@@ -37,10 +43,10 @@ const SIZES = {
   }
 };
 
-const colorStringLike = /(#[0-9a-f]{3,8}|(rgba?|hsla?|hwba?)\([0-9.,%\s]+\))/ig
+const colorStringLike = /(#?[0-9a-f]{3,8}|(rgba?|hsla?|hwba?)\([0-9.,%\s]+\))/ig
 
 const isSingleColor = s => {
-  try { Color(s); return true; } catch (e) { return false; }
+  try { Color(s); return true; } catch (e) { try { Color('#' + s); return true; } catch (e) { return false; } }
 };
 
 const template = ({color, size = SIZES.Large}) => {
