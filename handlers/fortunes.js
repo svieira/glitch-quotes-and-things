@@ -169,9 +169,26 @@ https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fa-scroll.png?15010
 https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fa-rabbit-foot.png?1501041428601
 `.trim().split('\n')
 
+function toRegex(searchString) {
+  searchString = searchString.split('').join('.*')
+  const protoRegex = /[+?()\[\]{}\\]/g.replace(searchString, '\\$1');
+  return RegExp(`.*${protoRegex}.*`, 'i');
+}
+
+function fortuneText(text) {
+  if (!text.trim()) return choice(FORTUNES);
+  const test = toRegex(text && text.trim() || '');
+  return choice(FORTUNES.filter(test.test)) || choice(FORTUNES);
+}
+
+function choice(list) {
+  return list[Math.floor(Math.random() * list.length)];
+}
+
 module.exports = function fortuneHandler(request, response) {
-  const text = FORTUNES[Math.floor(Math.random() * FORTUNES.length)];
-  const icon_url = ICONS[Math.floor(Math.random() * ICONS.length)];
+  
+  const text = choice(FORTUNES);
+  const icon_url = choice(ICONS);
   return response.json({
     response_type: 'in_channel',
     text,
