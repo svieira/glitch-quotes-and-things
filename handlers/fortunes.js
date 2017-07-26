@@ -17,6 +17,31 @@ This was a test of the emergency broadcasting system. Had this been an actual em
 %
 There can be no public or private virtue unless the foundation of all action is the love and practice of truth
 %
+43rd Law of Computing: Anything that can go wr
+\`fortune: Segmentation fault ― core dumped\`
+%
+A moose once bit my sister.
+%
+A well-known friend is a treasure.
+%
+A witty saying proves nothing.
+%
+According to the latest official figures, ${Math.floor(Math.random() * 88)}% of all statistics are totally worthless.
+%
+All programmers are playwrights and all computers are lousy actors.
+%
+All things are possible except skiing through a revolving door.
+%
+A person with one watch knows what time it is; a person with two watches is never sure.
+%
+A real patriot is the fellow who gets a parking ticket and rejoices that the system works.
+%
+A sine curve goes off into infinity or at least to the end of the blackboard.
+%
+A student who changes the course of history is probably taking an exam.
+%
+A language that doesn't have everything is actually easier to program in than some that do.
+%
 Drawing on my fine command of language, I said nothing.
 %
 I don't have any solution but I certainly admire the problem.
