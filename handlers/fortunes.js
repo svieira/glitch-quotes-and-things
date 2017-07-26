@@ -22,7 +22,21 @@ There can be no public or private virtue unless the foundation of all action is 
 %
 A moose once bit my sister.
 %
-A well-known friend is a treasure.
+Another good night not to sleep in a eucalyptus tree.
+%
+Any excuse will serve a tyrant.
+%
+Any sufficiently advanced bureaucracy is indistinguishable from molasses.
+%
+If you drop a piece of buttered toast it lands buttered side down
+%
+Beware of bugs in the above code; I have only proved it correct, not tried it.
+%
+Beware of Programmers who carry screwdrivers.
+%
+Bombeck's Rule of Medicine: Never go to a doctor whose office plants have died.
+%
+An ounce of prevention is worth a pound of cure.
 %
 A witty saying proves nothing.
 %
@@ -31,6 +45,10 @@ According to the latest official figures, ${Math.floor(Math.random() * 88)}% of 
 All programmers are playwrights and all computers are lousy actors.
 %
 All things are possible except skiing through a revolving door.
+%
+All wise men share one trait in common: the ability to listen.
+%
+Allen's Axiom: When all else fails, read the instructions.
 %
 A person with one watch knows what time it is; a person with two watches is never sure.
 %
