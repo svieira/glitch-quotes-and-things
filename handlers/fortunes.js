@@ -97,6 +97,14 @@ An adventure is only an inconvenience rightly considered. An inconvenience is on
 %
 Drawing on my fine command of language, I said nothing.
 %
+Almost all good computer programs contain at least one random-number generator.
+%
+An ounce of application is worth a ton of abstraction.
+%
+Any clod can have the facts, but having opinions is an *art*.
+%
+Becoming an overnight success usually takes years.
+%
 I don't have any solution but I certainly admire the problem.
 %
 It's bad luck to be superstitious.
