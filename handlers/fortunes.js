@@ -36,7 +36,11 @@ Beware of Programmers who carry screwdrivers.
 %
 Bombeck's Rule of Medicine: Never go to a doctor whose office plants have died.
 %
+Bradley's Bromide: If computers get too powerful, we can organize them into a committee. That will do them in.
+%
 An ounce of prevention is worth a pound of cure.
+%
+But in our enthusiasm, we could not resist a radical overhaul of the system, in which all of its major weaknesses have been exposed, analyzed, and replaced with new weaknesses.
 %
 A witty saying proves nothing.
 %
@@ -75,6 +79,16 @@ Nondeterminism means never having to say you are wrong.
 Of COURSE it's the murder weapon. Who would frame someone with a fake?
 %
 Stealing a rhinoceros should not be attempted lightly.
+%
+Captain Penny's Law: You can fool all of the people some of the time, and some of the people all of the time, but you can't fool Mom.
+%
+Zombie: 100% post-consumer human
+%
+Diplomacy is the art of extricating oneself from a situation that tact would have prevented in the first place.
+%
+Do not take life too seriously; you will never get out of it alive.
+%
+Don't comment bad code: rewrite it.
 %
 The society which scorns excellence in plumbing as a humble activity and tolerates shoddiness in philosophy because it is an exaulted activity will have neither good plumbing nor good philosophy ... neither its pipes nor its theories will hold water.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
