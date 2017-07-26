@@ -140,6 +140,21 @@ Do not be too timid to endure responsibilities.
 %
 Art, like morality, consists of drawing the line somewhere.
 %
+A man preaching what he thinks is a platitude is far more intolerant than a man preaching what he admits is a paradox.
+%
+Courage is almost a contradiction in terms. It means a strong desire to live taking the form of a readiness to die.
+%
+There should be a burnished tablet let into the ground on the spot where some courageous man first ate Stilton cheese, and survived.
+%
+From quiet homes and first beginning,
+Out to the undiscovered ends,
+There's nothing worth the wear of winning,
+But laughter and the love of friends.
+%
+Love is not affectionate feeling, but a steady wish for the loved person's ultimate good as far as it can be obtained.
+%
+Faith, in the sense in which I am here using the word, is the art of holding on to things your reason has once accepted, in spite of your changing moods.
+%
 The society which scorns excellence in plumbing as a humble activity and tolerates shoddiness in philosophy because it is an exaulted activity will have neither good plumbing nor good philosophy ... neither its pipes nor its theories will hold water.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
