@@ -3,6 +3,20 @@ A programmer is a person who passes as an exacting expert on the basis of being 
 %
 Laughter is the closest distance between two people.
 %
+There was a boy called Eustace Clarence Scrubb, and he almost deserved it.
+%
+"Where shall I begin, please your Majesty?" he asked. "Begin at the beginning," the King said, gravely, "and go on till you come to the end: then stop."
+%
+"Yacc" owes much to a most stimulating collection of users, who have goaded me beyond my inclination, and frequently beyond my ability in their endless search for "one more feature". Their irritating unwillingness to learn how to do things my way has usually led to my doing things their way; most of the time, they have been right.
+~ S. C. Johnson, "Yacc guide acknowledgements"
+%
+The great Gaels of Ireland are the men that God made mad,
+For all their wars are merry, and all their songs are sad.
+%
+This was a test of the emergency broadcasting system. Had this been an actual emergency, we would have fled in terror and you would not have been informed.
+%
+There can be no public or private virtue unless the foundation of all action is the love and practice of truth
+%
 Drawing on my fine command of language, I said nothing.
 %
 I don't have any solution but I certainly admire the problem.
