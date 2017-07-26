@@ -123,6 +123,23 @@ A thing may be too sad to be believed or too wicked to be believed or too good t
 %
 Tradition means giving votes to the most obscure of all classes, our ancestors. It is the democracy of the dead. Tradition refuses to submit to that arrogant oligarchy who merely happen to be walking around.
 %
+When you break the big laws, you do not get freedom; you do not even get anarchy. You get the small laws.
+%
+> The Declaration of Independence dogmatically bases all rights on the fact that God created all men equal; and it is right; for if they were not created equal, they were certainly evolved unequal. There is no basis for democracy except in a dogma about the divine origin of man.
+~ G. K. Chesterton
+%
+Over-civilization and barbarism are within an inch of each other. And a mark of both is the power of medicine-men.
+%
+The Bible tells us to love our neighbors, and also to love our enemies; probably because they are generally the same people.
+%
+The riddles of God are more satisfying than the solutions of man.
+%
+The truth is, of course, that the curtness of the Ten Commandments is an evidence, not of the gloom and narrowness of a religion, but, on the contrary, of its liberality and humanity. It is shorter to state the things forbidden than the things permitted: precisely because most things are permitted, and only a few things are forbidden.
+%
+Do not be too timid to endure responsibilities.
+%
+Art, like morality, consists of drawing the line somewhere.
+%
 The society which scorns excellence in plumbing as a humble activity and tolerates shoddiness in philosophy because it is an exaulted activity will have neither good plumbing nor good philosophy ... neither its pipes nor its theories will hold water.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
