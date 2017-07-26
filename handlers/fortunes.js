@@ -22,6 +22,16 @@ There can be no public or private virtue unless the foundation of all action is 
 %
 A moose once bit my sister.
 %
+"Analysis" is "design" spelled backwards.
+%
+A bad workman quarrels with his tools.
+%
+login:
+	case '\\7': *((char *)(384*1024L+062)) = 2; /* beep */
+	Welcome to VAX/VMS Version 1.60
+    ON ENDFILE(SYSIN) GO TO ADATHIBA; /* FILE-VEGE VIZSGALATA */
+   Tape dump of all filesystems taken this afternoon.
+%
 Another good night not to sleep in a eucalyptus tree.
 %
 Any excuse will serve a tyrant.
