@@ -1,5 +1,15 @@
 const FORTUNES = `
-Mate, this parrot wouldn't VOOM if you put four million volts through it!
+A programmer is a person who passes as an exacting expert on the basis of being able to turn out, after innumerable punching, an infinite series of incomprehensive answers calculated with micrometric precisions from vague assumptions based on debatable figures taken from inconclusive documents and carried out on instruments of problematical accuracy by persons of dubious reliability and questionable mentality for the avowed purpose of annoying and confounding a hopelessly defenseless department that was unfortunate enough to ask for the information in the first place.
+%
+Laughter is the closest distance between two people.
+%
+Drawing on my fine command of language, I said nothing.
+%
+I don't have any solution but I certainly admire the problem.
+%
+It's bad luck to be superstitious.
+%
+Mate, this parrot wouldn't VOOM if you put [four thousand volts through it](https://www.youtube.com/watch?v=4vuW6tQ0218)!
 %
 Might as well be frank, monsieur. It would take a miracle to get you out of Casablanca and the Germans have outlawed miracles.
 %
