@@ -64,6 +64,8 @@ A student who changes the course of history is probably taking an exam.
 %
 A language that doesn't have everything is actually easier to program in than some that do.
 %
+An adventure is only an inconvenience rightly considered. An inconvenience is only an adventure wrongly considered.
+%
 Drawing on my fine command of language, I said nothing.
 %
 I don't have any solution but I certainly admire the problem.
@@ -89,6 +91,37 @@ Diplomacy is the art of extricating oneself from a situation that tact would hav
 Do not take life too seriously; you will never get out of it alive.
 %
 Don't comment bad code: rewrite it.
+%
+Endless Loop: n., see Loop, Endless.
+Loop, Endless: n., see Endless Loop.
+%
+Entropy isn't what it used to be.
+%
+Eschew obfuscatory digressiveness.
+%
+Every program has at least one bug and can be shortened by at least one instruction ― from which, by induction, one can deduce that every program can be reduced to one instruction which doesn't work.
+%
+Excuse me while I change into something more formidable.
+%
+Fairy tales do not tell children the dragons exist. Children already know that dragons exist. Fairy tales tell children the dragons can be killed.
+%
+Fallacies do not cease to be fallacies because they become fashions.
+%
+A dead thing can go with the stream, but only a living thing can go against it.
+%
+The act of defending any of the cardinal virtues has today all the exhilaration of a vice.
+%
+To have a right to do a thing is not at all the same as to be right in doing it.
+%
+The comedy of man survives the tragedy of man.
+%
+The free man owns himself. He can damage himself with either eating or drinking; he can ruin himself with gambling. If he does he is certainly a damn fool, and he might possibly be a damned soul; but if he may not, he is not a free man any more than a dog.
+%
+When we step into the family, by the act of being born, we do step into a world which is incalculable, into a world which has its own strange laws, into a world which could do without us, into a world we have not made. In other words, when we step into the family we step into a fairy-tale.
+%
+A thing may be too sad to be believed or too wicked to be believed or too good to be believed; but it cannot be too absurd to be believed in this planet of frogs and elephants, of crocodiles and cuttle-fish.
+%
+Tradition means giving votes to the most obscure of all classes, our ancestors. It is the democracy of the dead. Tradition refuses to submit to that arrogant oligarchy who merely happen to be walking around.
 %
 The society which scorns excellence in plumbing as a humble activity and tolerates shoddiness in philosophy because it is an exaulted activity will have neither good plumbing nor good philosophy ... neither its pipes nor its theories will hold water.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
