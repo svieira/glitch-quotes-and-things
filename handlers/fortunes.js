@@ -81,6 +81,22 @@ All things are possible except skiing through a revolving door.
 %
 All wise men share one trait in common: the ability to listen.
 %
+Caution: Do not look at laser with remaining eye.
+%
+Could not open 2147478952 framebuffers.
+%
+Do not meddle in the affairs of wizards: they are subtle and quick to anger.
+%
+Don't feed the bats tonight.
+%
+Don't go surfing in South Dakota for a while.
+%
+Dreams are free, but there's a small charge for alterations.
+%
+Drive defensively, buy a tank.
+%
+Consistency is always easier to defend than correctness.
+%
 Allen's Axiom: When all else fails, read the instructions.
 %
 A person with one watch knows what time it is; a person with two watches is never sure.
