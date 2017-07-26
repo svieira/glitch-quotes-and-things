@@ -170,8 +170,8 @@ https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fa-rabbit-foot.png?
 `.trim().split('\n')
 
 function toRegex(searchString) {
-  searchString = searchString.replace(.split('').join('.*?')
-  const protoRegex = searchString.replace(/[+()\[\]{}\\]/g, '\\$1');
+  searchString = searchString.replace(/([\?\.\*])/g, '\\$1').split('').join('.*?')
+  const protoRegex = searchString.replace(/([+()\[\]{}\\])/g, '\\$1');
   return RegExp(`.*?${protoRegex}.*?`, 'i');
 }
 
