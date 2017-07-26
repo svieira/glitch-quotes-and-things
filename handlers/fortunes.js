@@ -26,6 +26,25 @@ A moose once bit my sister.
 %
 A bad workman quarrels with his tools.
 %
+A fly by night leaves no shadow beyond a doubt.
+%
+A good plan today is better than a perfect plan tomorrow.
+%
+A goodly apple rotten at the heart:
+Oh, what a goodly outside falsehood hath!
+%
+A plucked goose doesn't lay golden eggs.
+%
+A rolling stone gathers momentum.
+%
+A stitch in time keeps your tu-tu from becoming a four-four.
+%
+A watched terminal never prints.
+%
+All syllogisms have three parts; therefore this is not a syllogism.
+%
+A system programmer is someone who debugs his programs with an oscilloscope.
+%
 login:
 	case '\\7': *((char *)(384*1024L+062)) = 2; /* beep */
 	Welcome to VAX/VMS Version 1.60
