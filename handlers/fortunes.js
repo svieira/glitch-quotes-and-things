@@ -45,11 +45,13 @@ All syllogisms have three parts; therefore this is not a syllogism.
 %
 A system programmer is someone who debugs his programs with an oscilloscope.
 %
+\`\`\`
 login:
 	case '\\7': *((char *)(384*1024L+062)) = 2; /* beep */
 	Welcome to VAX/VMS Version 1.60
     ON ENDFILE(SYSIN) GO TO ADATHIBA; /* FILE-VEGE VIZSGALATA */
    Tape dump of all filesystems taken this afternoon.
+\`\`\`
 %
 Another good night not to sleep in a eucalyptus tree.
 %
@@ -209,6 +211,8 @@ Love is not affectionate feeling, but a steady wish for the loved person's ultim
 Faith, in the sense in which I am here using the word, is the art of holding on to things your reason has once accepted, in spite of your changing moods.
 %
 The society which scorns excellence in plumbing as a humble activity and tolerates shoddiness in philosophy because it is an exaulted activity will have neither good plumbing nor good philosophy ... neither its pipes nor its theories will hold water.
+%
+Wisdom is acknowledging that other people may have made mistakes before you.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
