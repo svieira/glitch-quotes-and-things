@@ -229,7 +229,15 @@ https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fa-rabbit-foot.png?
 function toRegex(searchString) {
   searchString = searchString.replace(/([\?\.\*])/g, '\\$1').split('').join('.*?')
   const protoRegex = searchString.replace(/([+()\[\]{}\\])/g, '\\$1');
-  return RegExp(`.*?${protoRegex}.*?`, 'i');
+  try {    
+    return RegExp(`.*?${protoRegex}.*?`, 'i');
+  } catch (e) {
+    return {
+      test() {
+        return true;
+      }
+    };
+  }
 }
 
 function fortuneText(text) {
@@ -247,6 +255,7 @@ module.exports = function fortuneHandler(request, response) {
   const text = fortuneText(request.body.text);
   const icon_url = choice(ICONS);
   return response.json({
+    username: 'Fortune Teller',
     response_type: 'in_channel',
     text,
     icon_url
