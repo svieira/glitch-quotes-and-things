@@ -16,7 +16,7 @@
     "node-fetch": "^1.7.1"
   },
   "engines": {
-    "node": "8.1.x"
+    "node": "8.x"
   },
   "repository": {
     "url": "https://glitch.com/#!/project/welcome-project"

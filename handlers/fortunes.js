@@ -224,6 +224,8 @@ https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fa-d20.png?15010409
 https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fan-eight-ball.png?1501041066733
 https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fa-scroll.png?1501041303790
 https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fa-rabbit-foot.png?1501041428601
+https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fladybug.png?1502745717140
+https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fdolphin.png?1502745890182
 `.trim().split('\n')
 
 function toRegex(searchString) {
