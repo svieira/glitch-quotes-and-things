@@ -87,6 +87,7 @@ function randomName(size = 4) {
 
 module.exports = function appearInHandler(request, response) {
   var roomName = (request.body && request.body.text || randomName());
+  var message = ''
 
   const text = `[Please join me in appear.in/${roomName}](https://appear.in/${roomName})`;
   response.json({
