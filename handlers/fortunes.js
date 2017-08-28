@@ -213,6 +213,25 @@ Faith, in the sense in which I am here using the word, is the art of holding on 
 The society which scorns excellence in plumbing as a humble activity and tolerates shoddiness in philosophy because it is an exaulted activity will have neither good plumbing nor good philosophy ... neither its pipes nor its theories will hold water.
 %
 Wisdom is acknowledging that other people may have made mistakes before you.
+%
+Shannon's six secrets: Simplification. Analogy. Reframing. Abstraction. Division. Inversion.
+%
+Use the least powerful language possible for a given problem. Prefer declarative languages over procedural.
+%
+All problems in computer science can be solved by another level of indirection
+... except of course for the problem of too many indirections.
+%
+The height of cleverness is to be able to conceal it.
+%
+Design the data, not the code.
+%
+Give every man thy ear, but few thy voice
+Take each man's censure, but reserve thy judgment.
+%
+"I think that I shall never see;
+A graph more lovely than a tree.
+A tree whose crucial property;
+Is loop-free connectivity.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
