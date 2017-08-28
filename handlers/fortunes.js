@@ -232,6 +232,24 @@ Take each man's censure, but reserve thy judgment.
 A graph more lovely than a tree.
 A tree whose crucial property;
 Is loop-free connectivity.
+%
+The first step in fixing a broken program is getting it to fail repeatably.
+%
+An articulated guess beats an unspoken assumption.
+%
+What's a dinosaur's favourite file format?
+.rar
+%
+1998: Don't get into strangers' cars. Don't meet people from the internet. 
+2016: Literally summon strangers from internet to get into their car.
+%
+Talent is hitting a target that nobody else can hit, genius is hitting a target that nobody else can see.
+%
+Man's most prudent counselor is time.
+%
+Those who do not forget the past are masters of the future.
+%
+Upon arriving in the capital-F Future, we discover it, invariably, to be the lowercase now.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
