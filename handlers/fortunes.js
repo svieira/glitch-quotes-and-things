@@ -250,6 +250,8 @@ Man's most prudent counselor is time.
 Those who do not forget the past are masters of the future.
 %
 Upon arriving in the capital-F Future, we discover it, invariably, to be the lowercase now.
+%
+No battle was ever won according to plan, but no battle was ever won without one.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
