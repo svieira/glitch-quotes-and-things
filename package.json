@@ -10,10 +10,10 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.15.3",
+    "express": "^4.15.4",
     "body-parser": "^1.17.2",
     "color": "^2.0.0",
-    "node-fetch": "^1.7.1"
+    "node-fetch": "^1.7.2"
   },
   "engines": {
     "node": "8.x"

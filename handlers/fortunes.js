@@ -268,8 +268,7 @@ https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fdolphin.png?150274
 `.trim().split('\n')
 
 function toRegex(searchString) {
-  searchString = searchString.replace(/([\?\.\*])/g, '\\$1').split('').join('.*?')
-  const protoRegex = searchString.replace(/([+()\[\]{}\\])/g, '\\$1');
+  const protoRegex = searchString.split('').map(char => char.replace(/([+()\[\]{}\\.*?-])/g, '\\$1')).join('.*?');
   try {    
     return RegExp(`.*?${protoRegex}.*?`, 'i');
   } catch (e) {
