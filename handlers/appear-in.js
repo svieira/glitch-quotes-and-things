@@ -86,10 +86,13 @@ function randomName(size = 4) {
 }
 
 module.exports = function appearInHandler(request, response) {
-  var roomName = (request.body && request.body.text || randomName());
-  var message = ''
+  const message = (request.body && request.body.text || '').trim();
+  const isSingleWord = /^[\w\d_.-]+$/i.test(message);
+  const roomName = (isSingleWord && message || randomName());
+  const text = isSingleWord 
+    ? `[Please join me in appear.in/${roomName}](https://appear.in/${roomName})`
+    : `${message}\n[appear.in/${roomName}](https://appear.in/${roomName})`
 
-  const text = `[Please join me in appear.in/${roomName}](https://appear.in/${roomName})`;
   response.json({
     response_type: 'in_channel',
     text,
