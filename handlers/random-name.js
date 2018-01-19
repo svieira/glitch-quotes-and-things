@@ -71,11 +71,11 @@ ruby
 diamond
 `.trim().split('\n');
 
-module.exports = function randomName(size = 4, { NOUNS = NOUNS, ADJECTIVES = ADJECTIVES } = {}) {
-  let result = [];
+module.exports = function randomName(size = 4, { nouns = NOUNS, adjectives = ADJECTIVES } = {}) {
+  let result = new Set();
   let adjective = true;
   while (result.length < size) {
-    const words = adjective ? ADJECTIVES : NOUNS;
+    const words = adjective ? adjectives : nouns;
     const wordsLength = words.length;
     const index = Math.floor(Math.random() * wordsLength)
     if (index === wordsLength || result.includes(words[index])) continue;
