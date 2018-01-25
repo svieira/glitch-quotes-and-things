@@ -1,10 +1,18 @@
 const { ICONS, FORTUNES } = require('./fortunes-data');
 
+const hashTags = /#([\w\d_-]+)/g;
+
 function toRegex(searchString) {
   searchString = searchString.toLowerCase();
+  let results = new Set();
+  let m;
+  while (m = hashTags.exec(searchString)) {
+    results.add(m[1]);
+  }
+  results = RegExp('(' + Array.from(results).join('|') + ')', 'ig');
   return {
     test(f) {
-      return f.toLowerCase().indexOf(searchString) > -1;
+      return results.test(f);
     }
   };
 }
