@@ -44,6 +44,7 @@ tea
 tree
 brook
 `.trim().split('\n');
+
 const ADJECTIVES = `
 kind
 truthful
@@ -74,13 +75,13 @@ diamond
 module.exports = function randomName(size = 4, { nouns = NOUNS, adjectives = ADJECTIVES } = {}) {
   let result = new Set();
   let adjective = true;
-  while (result.length < size) {
+  while (result.size < size) {
     const words = adjective ? adjectives : nouns;
     const wordsLength = words.length;
     const index = Math.floor(Math.random() * wordsLength)
-    if (index === wordsLength || result.includes(words[index])) continue;
-    result.push(words[index]);
+    if (index === wordsLength || result.has(words[index])) continue;
+    result.add(words[index]);
     adjective = !adjective;
   }
-  return result.join('-');
+  return Array.from(result).join('-');
 };

@@ -7,7 +7,7 @@ function toRegex(searchString) {
   let results = new Set();
   let m;
   while (m = hashTags.exec(searchString)) {
-    results.add(m[1]);
+    m[1] !== 'fortune' && results.add(m[1]);
   }
   results = RegExp('(' + Array.from(results).join('|') + ')', 'ig');
   return {
