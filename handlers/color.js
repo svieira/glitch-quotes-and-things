@@ -50,7 +50,7 @@ const isSingleColor = s => {
 };
 
 const template = ({color, size = SIZES.Large}) => {
-  const inverseColor = color.light() ? BLACK : WHITE;
+  const inverseColor = color.isLight() ? BLACK : WHITE;
   const text = size === SIZES.Small ? '' : `
 <text
     x="50%" y="50%" alignment-baseline="middle" text-anchor="middle"
@@ -66,7 +66,7 @@ const template = ({color, size = SIZES.Large}) => {
 `.trim();
 }
 
-const mdTemplate = (svg, alt='') => `![${alt}](${toDataUri(svg)})`;
+const mdTemplate = (svg, alt='', size=Sizes.Large) => `![${alt}](${toDataUri(svg)})`;
 
 const toDataUri = svg => 'data:image/svg+xml;base64,' + new Buffer(svg).toString('base64');
 
