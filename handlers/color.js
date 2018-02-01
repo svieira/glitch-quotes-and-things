@@ -66,21 +66,21 @@ const template = ({color, size = SIZES.Large}) => {
 `.trim();
 }
 
-const mdTemplate = (svg, alt='', size=Sizes.Large) => `![${alt}](${toDataUri(svg)})`;
+const mdTemplate = (svg, alt='', size=SIZES.Large) => `![${alt}](${toDataUri(svg)} =${size.width}x${size.height})`;
 
 const toDataUri = svg => 'data:image/svg+xml;base64,' + new Buffer(svg).toString('base64');
 
 function standAloneColorResponse(color) {
   color = getColor(color);
   const svg = template({color});
-  return mdTemplate(svg, `The color ${color.hex()}`);
+  return mdTemplate(svg, `The color ${color.hex()}`, SIZES.Large);
 }
 
 function multipleColorResponse(str) {
   const toMd = match => {
     try {
       const color = Color(match);
-      return mdTemplate(template({color, size: SIZES.Small})) + ' ' + match;
+      return mdTemplate(template({color, size: SIZES.Small}), '', SIZES.Small) + ' ' + match;
     } catch (e) {
       return match;
     }
