@@ -1,1 +1,0 @@
-"http://jspaint.ml/#session:templated-name"
