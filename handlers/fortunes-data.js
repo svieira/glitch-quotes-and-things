@@ -257,6 +257,12 @@ In the matter of reforming things, as distinct from deforming them, there is one
 ~ G. K. Chesterton
 %
 The iron law of bureaucracy states that for all organizations, most of their activity will be devoted to the perpetuation of the organization, not to the pursuit of its ostensible objective.
+%
+As is immediately evident, the *crisis of truth* is not unconnected with this development. Once the idea of a universal truth about the good, knowable by human reason, is lost, inevitably the notion of conscience also changes. Conscience is no longer considered in its primordial reality as an act of a person's intelligence, the function of which is to apply the universal knowledge of the good in a specific situation and thus to express a judgment about the right conduct to be chosen here and now.
+%
+There exists a prior moral obligation, and a grave one at that, to seek the truth and to adhere to it once it is known.
+%
+Conscience has rights because it has duties
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
