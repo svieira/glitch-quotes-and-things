@@ -269,6 +269,12 @@ But it is immortals whom we joke with, work with, marry, snub, and exploit - imm
 This does not mean that we are to be perpetually solemn. We must play.
 But our merriment must be of that kind (and it is, in fact, the merriest kind) which exists between people who have, from the outset, taken each other seriously - no flippancy, no superiority, no presumption.
 And our charity must be real and costly love, with deep feeling for the sins in spite of which we love the sinner - no mere tolerance or indulgence which parodies love as flippancy parodies merriment.
+%
+Caesarism is not dictatorship, not the result of one man’s overriding ambition, not a brutal seizure of power through revolution. It is not based upon a specific doctrine or philosophy. It is essentially pragmatic and un-theoretical. It is a slow, often century-old, unconscious development that ends in a voluntary surrender of a free people escaping from freedom to one autocratic master
+%
+Even if there is only one possible unified theory, it is just a set of rules and equations. What is it that breathes fire into the equations and makes a universe for them to describe? The usual approach of science of constructing a mathematical model cannot answer the questions of why there should be a universe for the model to describe. Why does the universe go to all the bother of existing?
+%
+Think God's thoughts after him.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `

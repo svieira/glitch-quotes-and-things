@@ -9,7 +9,10 @@ const HELP = `
 * \`-q\`, \`--quiet\` - Return the results as an ephemeral messsage only you can see
 `.trim();
 
-const codeBlock = (code, language='') => '```${language}\n' + code + '\n```'
+const backticks = '```'
+const codeBlock = (code, language='') => `${backticks}${language}
+${code}
+${backticks}`
 
 const template = ({expression, result, type}) => {
   return `

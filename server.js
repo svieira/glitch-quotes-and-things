@@ -1,8 +1,4 @@
 const formMiddleware = require('body-parser');
-const colorHandler = require('./handlers/color');
-const expressionHandler = require('./handlers/expressions');
-const appearInHandler = require('./handlers/appear-in');
-const fortuneHandler = require('./handlers/fortunes');
 const express = require('express');
 
 const app = express();
@@ -10,6 +6,19 @@ app.use(
   formMiddleware.json(),
   formMiddleware.urlencoded({ extended: true })
 );
+
+const lazyHandler = path => {
+  let handler;
+  return (...args) => {
+    if (handler) handler(...args);
+    (handler = require(path))(...args)
+  }
+};
+
+const colorHandler = lazyHandler('./handlers/color');
+const expressionHandler = lazyHandler('./handlers/expressions');
+const appearInHandler = lazyHandler('./handlers/appear-in');
+const fortuneHandler = lazyHandler('./handlers/fortunes');
 
 app.get('/color', colorHandler);
 app.post('/color', colorHandler);

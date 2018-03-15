@@ -1,4 +1,20 @@
 const { ICONS, FORTUNES } = require('./fortunes-data');
+const withHelp = require('./with-help');
+
+const HELP = `
+## \`/fortune #SEARCH #TERMS\`
+
+May also be invoked with a leading @fortune or #fortune in public rooms.  If the search term(s) are not matched a random fortune is chosen.
+
+### Examples
+
+> #fortune favors the #prepared
+> @fortune what are the #odds we make it?
+
+### Options
+* \`-h\`, \`--help\` - Show this screen
+`.trim();
+const username = 'Fortune Teller';
 
 const hashTags = /#([\w\d_-]+)/g;
 
@@ -27,14 +43,14 @@ function choice(list) {
   return list[Math.floor(Math.random() * list.length)];
 }
 
-module.exports = function fortuneHandler(request, response) {
+module.exports = withHelp({username, text: HELP}, function fortuneHandler(request, response) {
   
   const text = fortuneText(request.body.text);
   const icon_url = choice(ICONS);
   return response.json({
-    username: 'Fortune Teller',
+    username,
     response_type: 'in_channel',
     text,
     icon_url
   });
-}
+});
