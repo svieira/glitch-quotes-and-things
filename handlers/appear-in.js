@@ -20,6 +20,8 @@ If a longer message is provided, the bot echos that message with a random room n
 * \`-h\`, \`--help\` - Show this screen
 `.trim();
 
+// meet.jit.si/{ROOM-NAME}
+
 module.exports = withHelp({text: HELP}, function appearInHandler(request, response) {
   const message = (request.body && request.body.text || '').trim();
   const isSingleWord = /^[\w\d_.-]+$/i.test(message);
