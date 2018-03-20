@@ -275,6 +275,9 @@ Caesarism is not dictatorship, not the result of one man’s overriding ambition
 Even if there is only one possible unified theory, it is just a set of rules and equations. What is it that breathes fire into the equations and makes a universe for them to describe? The usual approach of science of constructing a mathematical model cannot answer the questions of why there should be a universe for the model to describe. Why does the universe go to all the bother of existing?
 %
 Think God's thoughts after him.
+%
+What you are now, we once were; what we are now, you shall be.
+~ Inscription in [Santa Maria della Concezione dei Cappuccini](https://en.wikipedia.org/wiki/Santa_Maria_della_Concezione_dei_Cappuccini)
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
