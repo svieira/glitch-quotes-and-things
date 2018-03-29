@@ -278,6 +278,8 @@ Think God's thoughts after him.
 %
 What you are now, we once were; what we are now, you shall be.
 ~ Inscription in [Santa Maria della Concezione dei Cappuccini](https://en.wikipedia.org/wiki/Santa_Maria_della_Concezione_dei_Cappuccini)
+%
+Excellence is an art won by training and habituation: we do not act rightly because we have virtue or excellence, but rather have these because we have acted rightly; these virtues are formed in man by doing his actions; we are what we repeatedly do. Excellence, then, is not an act but a habit.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
