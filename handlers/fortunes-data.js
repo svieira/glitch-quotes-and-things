@@ -280,6 +280,11 @@ What you are now, we once were; what we are now, you shall be.
 ~ Inscription in [Santa Maria della Concezione dei Cappuccini](https://en.wikipedia.org/wiki/Santa_Maria_della_Concezione_dei_Cappuccini)
 %
 Excellence is an art won by training and habituation: we do not act rightly because we have virtue or excellence, but rather have these because we have acted rightly; these virtues are formed in man by doing his actions; we are what we repeatedly do. Excellence, then, is not an act but a habit.
+%
+**More**: Yes. What would you do? Cut a great road through the law to get after the Devil?
+**Roper**: I'd cut down every law in England to do that!
+**More**: Oh? And when the last law was down, and the Devil turned round on you — where would you hide, Roper, the laws all being flat? This country's planted thick with laws from coast to coast — man's laws, not God's — and if you cut them down — and you're just the man to do it — do you really think you could stand upright in the winds that would blow then? Yes, I'd give the Devil benefit of law, for my own safety’s sake.
+~ [*A Man For All Seasons*](https://www.youtube.com/watch?v=WMqReTJkjjg)
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
