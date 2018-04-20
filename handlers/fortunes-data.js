@@ -285,6 +285,8 @@ Excellence is an art won by training and habituation: we do not act rightly beca
 **Roper**: I'd cut down every law in England to do that!
 **More**: Oh? And when the last law was down, and the Devil turned round on you — where would you hide, Roper, the laws all being flat? This country's planted thick with laws from coast to coast — man's laws, not God's — and if you cut them down — and you're just the man to do it — do you really think you could stand upright in the winds that would blow then? Yes, I'd give the Devil benefit of law, for my own safety’s sake.
 ~ [*A Man For All Seasons*](https://www.youtube.com/watch?v=WMqReTJkjjg)
+%
+I am for economy in government not to save money, but to save people.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
