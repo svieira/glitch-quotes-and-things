@@ -291,6 +291,11 @@ I am for economy in government not to save money, but to save people.
 Our Linux codebase is pretty weird in places, mostly because we sometimes get customers who want to run a real-time Linux 1.0 kernel that reports itself as Linux 4.2 for reasons, on a modified flight-certified 4-slot bread toaster which was far cheaper than an actual flight management computer, has a 19.2-bit random-endianness processor, and only supports an odd poorly-documented C standard from 1986-ish which seems to have had the programming guide for a Mr. Coffee accidentally interleaved into the official specs.
 %
 We control our actions, but the consequences that flow from those actions are controlled by principles.
+%
+We shall not cease from exploration
+And the end of all our exploring
+Will be to arrive where we started
+And know the place for the first time.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
