@@ -41,7 +41,14 @@ module.exports = withHelp({username, icon_url, text: HELP}, function expressionH
     // treat the body as a JSON string
     body: JSON.stringify(expression)
   }).then(res => res.json()).then(body => {
-    response.json({
+    if ('errorMessage' in body) {
+      // AWS Lambda error response
+      return response.json({
+        response_type,
+        text: template({ expression, type: 'Error', result: body.errorMessage })
+      });
+    }
+    return response.json({
       response_type,
       text: template({expression, type: body.type, result: body.value})
     })
