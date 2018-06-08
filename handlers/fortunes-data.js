@@ -296,6 +296,8 @@ We shall not cease from exploration
 And the end of all our exploring
 Will be to arrive where we started
 And know the place for the first time.
+%
+I have spent all my life under a communist regime, and I will tell you that a society without any objective legal scale is a terrible one indeed. But a society with no other scale but the legal one is also less than worthy of man
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
