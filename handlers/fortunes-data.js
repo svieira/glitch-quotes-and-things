@@ -298,6 +298,8 @@ Will be to arrive where we started
 And know the place for the first time.
 %
 I have spent all my life under a communist regime, and I will tell you that a society without any objective legal scale is a terrible one indeed. But a society with no other scale but the legal one is also less than worthy of man
+%
+The burning of widows is your custom. Prepare the funereal pyre. But my nation has also a custom. When men burn women alive, we hang them, and confiscate their property. Let us all act according to our national customs!
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
