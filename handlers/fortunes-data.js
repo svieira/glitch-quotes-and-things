@@ -318,7 +318,20 @@ They're hill areas.
 I can understand bicycles. They're pretty simple.  
 I have no problem understanding boats.  
 I even have a pretty good grasp of cars.  
-But airplanes go completely over my head.
+But airplanes go completely over my head.  
+:woosh:
+%
+The world tongue-twister champion just got arrested. I hear they’re gonna give him a really tough sentence.
+%
+Pray Elon Musk doesn't have a scandal.  
+Elongate would drag on forever.
+%
+I used to be a kleptomaniac but I took something for it
+%
+The two white actors in *Black Panther* also played Gollum and Bilbo Baggins.  
+Meaning they're the two Tolkien white guys of the movie.
+%
+![Oh crap! It's a Thesaurus](https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fimage.png?1531461734469)
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
