@@ -338,6 +338,9 @@ I asked him to show me, so he counted...
 Uno...  
 Dos...  
 ...and then he vanished without a tres.
+%
+What’s the best thing about telling UDP jokes?  
+I don’t have to care if you get them.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
