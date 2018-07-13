@@ -88,7 +88,7 @@ function multipleColorResponse(str) {
   return str.replace(colorStringLike, toMd).replace(/\b[a-z]+\b/g, toMd);
 }
 
-const icon_url = 'https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fimage.png?1521091993111';
+const icon_url = 'https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fimage.png?1501040026835';
 
 module.exports = withHelp({icon_url, text: HELP}, function colorHandler(request, response) {
   var color = (request.body && request.body.text || '');

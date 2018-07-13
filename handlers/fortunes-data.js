@@ -332,10 +332,15 @@ The two white actors in *Black Panther* also played Gollum and Bilbo Baggins.
 Meaning they're the two Tolkien white guys of the movie.
 %
 ![Oh crap! It's a Thesaurus](https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fimage.png?1531461734469)
+%
+A magician once told me that he could disappear on a count of three.  
+I asked him to show me, so he counted...  
+Uno...  
+Dos...  
+...and then he vanished without a tres.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
-https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fimage.png?1501040026835
 https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fcookie.png?1501040330593
 https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fa-mirror.png?1501040717131
 https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fa-d6.png?1501040991773
