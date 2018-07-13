@@ -300,6 +300,15 @@ And know the place for the first time.
 I have spent all my life under a communist regime, and I will tell you that a society without any objective legal scale is a terrible one indeed. But a society with no other scale but the legal one is also less than worthy of man
 %
 The burning of widows is your custom. Prepare the funereal pyre. But my nation has also a custom. When men burn women alive, we hang them, and confiscate their property. Let us all act according to our national customs!
+%
+Why did the cat fall off the roof?  
+It didn't have enough mu
+%
+My Physics teacher said I had potential - then he pushed me off a building.
+%
+Two fish in a tank. One says to the other "Do you know how to drive this?"
+%
+Two parrots on a perch. One says "Can you smell fish?"
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
