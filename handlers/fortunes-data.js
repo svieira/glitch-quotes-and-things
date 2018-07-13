@@ -311,6 +311,14 @@ Two fish in a tank. One says to the other "Do you know how to drive this?"
 Two parrots on a perch. One says "Can you smell fish?"
 %
 A termite walks into a bar and asks "where is the bar tender?"
+%
+Mountain ranges aren't funny.  
+They're hill areas.
+%
+I can understand bicycles. They're pretty simple.  
+I have no problem understanding boats.  
+I even have a pretty good grasp of cars.  
+But airplanes go completely over my head.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
