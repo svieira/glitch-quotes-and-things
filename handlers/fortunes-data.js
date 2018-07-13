@@ -309,6 +309,8 @@ My Physics teacher said I had potential - then he pushed me off a building.
 Two fish in a tank. One says to the other "Do you know how to drive this?"
 %
 Two parrots on a perch. One says "Can you smell fish?"
+%
+A termite walks into a bar and asks "where is the bar tender?"
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
