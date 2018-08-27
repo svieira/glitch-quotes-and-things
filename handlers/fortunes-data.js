@@ -341,6 +341,8 @@ Dos...
 %
 What’s the best thing about telling UDP jokes?  
 I don’t have to care if you get them.
+%
+If geometry were as much opposed to our passions and present interests as is ethics, we should contest it and violate it but little less, notwithstanding all the demonstrations of Euclid and Archimedes
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
