@@ -6,6 +6,8 @@ const HELP = `
 
 May also be invoked with a leading @fortune or #fortune in public rooms.  If the search term(s) are not matched a random fortune is chosen.
 
+When invoked from the slash command will @mention the user who invoked the command
+
 ### Examples
 
 > #fortune favors the #prepared
@@ -44,8 +46,9 @@ function choice(list) {
 }
 
 module.exports = withHelp({username, text: HELP}, function fortuneHandler(request, response) {
-  
-  const text = fortuneText(request.body.text);
+  const command = request.body.command;
+  const prefix = command ? `@${request.body.user_name}\n` : '';
+  const text = prefix + fortuneText(request.body.text);
   const icon_url = choice(ICONS);
   return response.json({
     username,
