@@ -24,10 +24,10 @@ If a longer message is provided, the bot echos that message with a random room n
 
 module.exports = withHelp({text: HELP}, function appearInHandler(request, response) {
   const message = (request.body && request.body.text || '').trim();
-  const isSingleWord = /^[\w\d_.-]+$/i.test(message);
+  const isSingleWord = /^[\w\d_.-]*$/i.test(message);
   const roomName = (isSingleWord && message || randomName());
   const text = isSingleWord 
-    ? `[Please join me in appear.in/${roomName}](https://appear.in/${roomName})`
+    ? `[Please join @${request.body.user_name} in appear.in/${roomName}](https://appear.in/${roomName})`
     : `${message}\n[appear.in/${roomName}](https://appear.in/${roomName})`
 
   response.json({
