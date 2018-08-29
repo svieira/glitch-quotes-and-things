@@ -60,7 +60,7 @@ const template = ({color, size = SIZES.Large}) => {
 <svg xmlns="http://www.w3.org/2000/svg"
      width="${size.width}" height="${size.height}" viewBox="0 0 100 100">
   <rect x="0" y="0" height="100" width="100"
-          style="fill: ${color.hex().toLowerCase()};"/>
+          style="fill: ${color.string()};"/>
   ${text}
 </svg>
 `.trim();
