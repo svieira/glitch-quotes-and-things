@@ -353,7 +353,12 @@ Then, I express my disagreement, and tell her: "That standard must be our standa
 Two things emanate from this changed standard. First, the work becomes more fun. It is deeper, it never gets tiresome or boring, because one can never really attain this standard. One's work becomes a lifelong work, and one keeps trying and trying. So it becomes very fulfilling, to live in the light of a goal like this.  
 
 But secondly, it does change what people are trying to do. It takes away from them the everyday, lower-level aspiration that is purely technical in nature, (and which we have come to accept) and replaces it with something deep, which will make a real difference to all of us that inhabit the earth.
-`.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
+%
+**Why do people dry grapes?**
+For raisins
+%
+**Did you know that diarhea is hereditary?**
+It runs in your jeans.`.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
 https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fcookie.png?1501040330593
