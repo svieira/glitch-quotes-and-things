@@ -416,7 +416,14 @@ We can't entirely eliminate our technical debt. My goal is to refinance it at a 
 %
 I used to be a kleptomaniac but I took something for it
 %
-People think I’m weird because I swallowed an abacus. Don’t they realize it’s what’s inside that counts?
+People think I'm weird because I swallowed an abacus. Don't they realize it’s what's inside that counts?
+%
+They say coffee is addictive. I've been drinking coffee daily for over twenty years, I think I'd know if it were addictive.
+%
+**Why did the cows keep returning to the hemp field?**
+It was a case of the pot calling the cattle back.
+%
+Cows on a hemp field? The steaks have never been so high.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
