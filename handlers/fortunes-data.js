@@ -413,6 +413,10 @@ Claustrophobia.
 I am the beginning of eternity, the end of time and space, the beginning of every end, and the end of every race. What am I?
 %
 We can't entirely eliminate our technical debt. My goal is to refinance it at a lower interest rate.
+%
+I used to be a kleptomaniac but I took something for it
+%
+People think I’m weird because I swallowed an abacus. Don’t they realize it’s what’s inside that counts?
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
