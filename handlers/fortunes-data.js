@@ -406,6 +406,11 @@ It's funny how smoking is supposedly bad for humans but at the same time it cure
 %
 **What's a cryptographer's favourite breakfast food?**
 3830580a8eeea6f3b1d777ee46f2ebc33ee6b9dc231798e7556e3b46e13fbb16
+%
+**What word means *fear of Santa*?**
+Claustrophobia.
+%
+I am the beginning of eternity, the end of time and space, the beginning of every end, and the end of every race. What am I?
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
