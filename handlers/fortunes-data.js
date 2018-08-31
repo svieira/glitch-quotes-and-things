@@ -376,6 +376,13 @@ A: Icy dead people.
 %
 I saw a group of developers throwing $1 bills at each other after a particularly gruesome code review.
 Turns out they were just passing the buck.
+%
+A seal is just a neutral sea lion
+neutral - as in, without an ion.
+%
+A man was arrested yesterday after falling into a combine harvester whilst trying to steal it.
+
+He's due to be baled tomorrow.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
