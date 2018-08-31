@@ -411,6 +411,8 @@ It's funny how smoking is supposedly bad for humans but at the same time it cure
 Claustrophobia.
 %
 I am the beginning of eternity, the end of time and space, the beginning of every end, and the end of every race. What am I?
+%
+We can't entirely eliminate our technical debt. My goal is to refinance it at a lower interest rate.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
