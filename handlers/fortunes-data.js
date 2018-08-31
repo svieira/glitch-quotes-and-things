@@ -403,6 +403,9 @@ My sister bet me £100 that I couldn't build a car out of spaghetti.
 You should have seen her face as I drove pasta!
 %
 It's funny how smoking is supposedly bad for humans but at the same time it cures salmon.
+%
+**What's a cryptographer's favourite breakfast food?**
+3830580a8eeea6f3b1d777ee46f2ebc33ee6b9dc231798e7556e3b46e13fbb16
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
