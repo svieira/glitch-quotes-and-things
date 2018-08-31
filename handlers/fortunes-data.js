@@ -381,8 +381,28 @@ A seal is just a neutral sea lion
 neutral - as in, without an ion.
 %
 A man was arrested yesterday after falling into a combine harvester whilst trying to steal it.
-
 He's due to be baled tomorrow.
+%
+**How did the hipster burn his mouth?**
+He was eating pizza before it was cool.
+%
+\`!false\`
+It's funny because it's true.
+%
+Hello, would you like to hear a TCP joke?
+*Yes, I’d like to hear a TCP joke.*
+OK, I will tell you a TCP joke.
+*OK, I will hear a TCP joke.*
+Are you ready to hear a TCP joke?
+*Yes, I am ready to hear a TCP joke.*
+OK, I am about to send the TCP joke. It will last 10 seconds, it has two characters, it does not have an explicit setting, it ends with a punchline.
+*OK, I am ready to get your TCP joke that will last 10 seconds, has two characters, does not have an explicit setting, and ends with a punchline.*
+I'm sorry, your connection has timed out... Hello, would you like to hear a TCP joke?
+%
+My sister bet me £100 that I couldn't build a car out of spaghetti.
+You should have seen her face as I drove pasta!
+%
+It's funny how smoking is supposedly bad for humans but at the same time it cures salmon.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
