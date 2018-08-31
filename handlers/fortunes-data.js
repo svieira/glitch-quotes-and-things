@@ -358,7 +358,25 @@ But secondly, it does change what people are trying to do. It takes away from th
 For raisins
 %
 **Did you know that diarhea is hereditary?**
-It runs in your jeans.`.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
+It runs in your jeans.
+%
+**What is \`int independence;\` called?**
+The Declaration of Independence
+%
+Rick Astley will let you borrow any movie from his Pixar collection except for one.
+He's never gonna give you Up.
+%
+A colleague of mine asked people at Airbus about their development practices.
+"Honestly", they answered, "we just wing it!"
+%
+Two clowns are eating a cannibal. One turns to the other and says, "I think we got this joke wrong."
+%
+Q; What do *Titanic* and *The Sixth Sense* have in common?
+A: Icy dead people.
+%
+I saw a group of developers throwing $1 bills at each other after a particularly gruesome code review.
+Turns out they were just passing the buck.
+`.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
 https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fcookie.png?1501040330593
