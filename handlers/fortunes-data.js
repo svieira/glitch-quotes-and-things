@@ -424,6 +424,8 @@ They say coffee is addictive. I've been drinking coffee daily for over twenty ye
 It was a case of the pot calling the cattle back.
 %
 Cows on a hemp field? The steaks have never been so high.
+%
+We're in enemy territory. Those are enemy birds. 👆
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
