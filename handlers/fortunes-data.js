@@ -331,7 +331,7 @@ I used to be a kleptomaniac but I took something for it
 The two white actors in *Black Panther* also played Gollum and Bilbo Baggins.  
 Meaning they're the two Tolkien white guys of the movie.
 %
-![Oh crap! It's a Thesaurus](https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fimage.png?1531461734469)
+![Oh crap! It's a Thesaurus](https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fimage.png?1539109463942)
 %
 A magician once told me that he could disappear on a count of three.  
 I asked him to show me, so he counted...  
@@ -426,6 +426,11 @@ It was a case of the pot calling the cattle back.
 Cows on a hemp field? The steaks have never been so high.
 %
 We're in enemy territory. Those are enemy birds. 👆
+%
+> Feeling smart? Let's change that ...
+If I ever saw a description of Haskell in a nutshell, this is it.
+%
+Feeling smart? Let's change that ...
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
