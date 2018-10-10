@@ -10,9 +10,7 @@ app.use(
 const lazyHandler = path => {
   let handler;
   return (...args) => {
-    if (handler) return handler(...args);
-
-    handler = require(path);
+    if (!handler) handler = require(path);    
     return handler(...args);
   }
 };
