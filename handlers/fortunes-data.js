@@ -432,6 +432,10 @@ If I ever saw a description of Haskell in a nutshell, this is it.
 %
 Feeling smart? Let's change that ...
 %
+> @starbuxman: In which I realize I don’t know the difference between a sheep and a lamb #fail
+> @venkat_s: For one, good sir, there is lambda but there’s no such thing as sheepda.
+> @BrianGoetz: Also: Lambic, but not Sheepbic.
+> @danieldietrich: The Moonad _joins_ in
 > @BrianGoetz: A moonad is just a bovoid in a field of endive munchers?
 > @kenkousen: Sounds like a foundational result from cow-tagory theory
 ~ [Twitter](https://twitter.com/BrianGoetz/status/1043994014607761408)
