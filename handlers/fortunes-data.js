@@ -431,6 +431,10 @@ We're in enemy territory. Those are enemy birds. 👆
 If I ever saw a description of Haskell in a nutshell, this is it.
 %
 Feeling smart? Let's change that ...
+%
+> @BrianGoetz: A moonad is just a bovoid in a field of endive munchers?
+> @kenkousen: Sounds like a foundational result from cow-tagory theory
+~ [Twitter](https://twitter.com/BrianGoetz/status/1043994014607761408)
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
