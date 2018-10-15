@@ -439,6 +439,8 @@ Feeling smart? Let's change that ...
 > @BrianGoetz: A moonad is just a bovoid in a field of endive munchers?
 > @kenkousen: Sounds like a foundational result from cow-tagory theory
 ~ [Twitter](https://twitter.com/BrianGoetz/status/1043994014607761408)
+%
+The correlation between the presence of correlation between the presence of causation and the presence of correlation and the absence of correlation between presence of causation and absence of correlation implies that causation causes correlation.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `

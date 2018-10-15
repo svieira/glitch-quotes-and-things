@@ -4,13 +4,13 @@
   "//3": "updating this file will download and update your packages",
   "name": "my-glitch-app",
   "version": "0.0.1",
-  "description": "What am I about?",
+  "description": "A collection of Mattermost robots and slash commands",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.16.4",
     "body-parser": "^1.18.3",
     "color": "^3.1.0",
     "node-fetch": "^2.2.0"
