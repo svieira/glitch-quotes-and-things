@@ -442,7 +442,9 @@ Feeling smart? Let's change that ...
 %
 The correlation between the presence of correlation between the presence of causation and the presence of correlation and the absence of correlation between presence of causation and absence of correlation implies that causation causes correlation.
 %
-"Wouldn't it be cool ..." is perhaps the single clearest indication that you should probably stop thinking so hard about things and start being pragmatic. 
+"Wouldn't it be cool ..." is perhaps the single clearest indication that you should probably stop thinking so hard about things and start being pragmatic.
+%
+I also want to start a new project called "Sorrowing: The Console". It'd be like bash, but all the messages would be drenched in existential dread.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
