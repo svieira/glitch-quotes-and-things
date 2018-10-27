@@ -589,6 +589,154 @@ Pray for your enemies in the love of Christ.
 Make peace with your adversary before the sun sets.
 %
 Never despair of God's mercy.
+%
+*In primis Dominum Deum diligere ex toto corde, tota anima, tota virtute;*
+%
+*deinde proximum tamquam seipsum.*
+%
+*Deinde non occidere,*
+%
+*non adulterare,*
+%
+*non facere furtum,*
+%
+*non concupiscere,*
+%
+*non falsum testimonium dicere,*
+%
+*honorare omnes homines,*
+%
+*et quod sibi quis fieri non vult, alio ne faciat.*
+%
+*Abnegare semetipsum sibi ut sequatur Christum.*
+%
+*Corpus castigare,*
+%
+*delicias non amplecti,*
+%
+*ieiunium amare.*
+%
+*Pauperes recreare,*
+%
+*nudum vestire,*
+%
+*infirmum visitare,*
+%
+*mortuum sepelire.*
+%
+*In tribulatione subvenire,*
+%
+*dolentem consolari.*
+%
+*Saeculi actibus se facere alienum,*
+%
+*nihil amori Christi praeponere.*
+%
+*Iram non perficere,*
+%
+*iracundiae tempus non reservare.*
+%
+*Dolum in corde non tenere,*
+%
+*pacem falsam non dare.*
+%
+*Caritatem non derelinquere.*
+%
+*Non iurare ne forte periuret,*
+%
+*veritatem ex corde et ore proferre.*
+%
+*Malum pro malo non reddere.*
+%
+*Iniuriam non facere, sed et factas patienter sufferre.*
+%
+*Inimicos diligere.*
+%
+*Maledicentes se non remaledicere, sed magis benedicere.*
+%
+*Persecutionem pro iustitia sustinere.*
+%
+*Non esse superbum,*
+%
+*non vinolentum,*
+%
+*non multum edacem,*
+%
+*non somnulentum,*
+%
+*non pigrum,*
+%
+*non murmuriosum,*
+%
+*non detractorem.*
+%
+*Spem suam Deo committere.*
+%
+*Bonum aliquid in se cum viderit, Deo applicet, non sibi;*
+%
+*malum vero semper a se factum sciat et sibi reputet.*
+%
+*Diem iudicii timere,*
+%
+*gehennam expavescere,*
+%
+*vitam aeternam omni concupiscentia spiritali desiderare,*
+%
+*mortem cotidie ante oculos suspectam habere.*
+%
+*Actus vitae suae omni hora custodire,*
+%
+*in omni loco Deum se respicere pro certo scire.*
+%
+*Cogitationes malas cordi suo advenientes mox ad Christum allidere et seniori spiritali patefacere,*
+%
+*os suum a malo vel pravo eloquio custodire,*
+%
+*multum loqui non amare,*
+%
+*verba vana aut risui apta non loqui,*
+%
+*risum multum aut excussum non amare.*
+%
+*Lectiones sanctas libenter audire,*
+%
+*orationi frequenter incumbere,*
+%
+*mala sua praeterita cum lacrimis vel gemitu cotidie in oratione Deo confiteri,*
+%
+*de ipsis malis de cetero emendare.*
+%
+*Desideria carnis non efficere,*
+%
+*voluntatem propriam odire,*
+%
+*praeceptis abbatis in omnibus oboedire, etiam si ipse aliter – quod absit – agat, memores illud dominicu praeceptum: Quae dicunt facite, quae autem faciunt facere nolite.*
+%
+*Non velle dici sanctum antequam sit, sed prius esse quod verius dicatur.*
+%
+*Praecepta Dei factis cotidie adimplere,*
+%
+*castitatem amare,*
+%
+*nullum odire,*
+%
+*zelum non habere,*
+%
+*invidiam non exercere,*
+%
+*contentionem non amare,*
+%
+*elationem fugere.*
+%
+*Et seniores venerare,*
+%
+*iuniores diligere.*
+%
+*In Christi amore pro inimicis orare;*
+%
+*cum discordante ante solis occasum in pacem redire.*
+%
+*Et de Dei misericordia numquam desperare.*
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
