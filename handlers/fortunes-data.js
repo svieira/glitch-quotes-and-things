@@ -737,6 +737,9 @@ Never despair of God's mercy.
 *cum discordante ante solis occasum in pacem redire.*
 %
 *Et de Dei misericordia numquam desperare.*
+%
+> In America, it is considered polite to exchange suits and countersuits prior to engaging in business, similarly to laying down a friendly barrage of suppressing fire when entering a room.
+~ [disconcision](https://news.ycombinator.com/item?id=18392004)
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 const ICONS = `
