@@ -742,6 +742,8 @@ Never despair of God's mercy.
 ~ [disconcision](https://news.ycombinator.com/item?id=18392004)
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
+// More can be found here: http://quotes.cat-v.org/programming/
+
 const ICONS = `
 https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fcookie.png?1501040330593
 https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fa-mirror.png?1501040717131
