@@ -746,6 +746,8 @@ Wordpress is an unauthenticated remote shell that, as a useful side feature, als
 Operations Skills: PRIMARILY KAFKA AND CASSANDRA BUT I CAN MAKE ANY SORT OF PREDICTION AND HAVE IT IGNORED BY ANY TYPE OF BUREAUCRACY
 %
 Programming Skills: PRIMARILY RUBY AND PYTHON BUT I CAN USE ANY TYPE OF GEM TO CONTROL ANY TYPE OF SNAKE
+%
+probably the biggest difference between app developers and bakers is that bakers don't believe all government, infrastructure and social services should be replaced by baked goods
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
