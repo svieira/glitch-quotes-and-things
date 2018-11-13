@@ -742,6 +742,10 @@ Never despair of God's mercy.
 ~ [disconcision](https://news.ycombinator.com/item?id=18392004)
 %
 Wordpress is an unauthenticated remote shell that, as a useful side feature, also contains a blog
+%
+Operations Skills: PRIMARILY KAFKA AND CASSANDRA BUT I CAN MAKE ANY SORT OF PREDICTION AND HAVE IT IGNORED BY ANY TYPE OF BUREAUCRACY
+%
+Programming Skills: PRIMARILY RUBY AND PYTHON BUT I CAN USE ANY TYPE OF GEM TO CONTROL ANY TYPE OF SNAKE
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
