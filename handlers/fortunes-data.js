@@ -747,9 +747,18 @@ Operations Skills: PRIMARILY KAFKA AND CASSANDRA BUT I CAN MAKE ANY SORT OF PRED
 %
 Programming Skills: PRIMARILY RUBY AND PYTHON BUT I CAN USE ANY TYPE OF GEM TO CONTROL ANY TYPE OF SNAKE
 %
-probably the biggest difference between app developers and bakers is that bakers don't believe all government, infrastructure and social services should be replaced by baked goods
+Probably the biggest difference between app developers and bakers is that bakers don't believe all government, infrastructure and social services should be replaced by baked goods
 %
 To keep one's word is an obligation of natural law, and nothing can be commanded a man against an obligation of natural law
+%
+Diplomats are useful only in fair weather. As soon as it rains, they drown in every drop.
+%
+He who sups with the Devil should have a long spoon.
+%
+And now dear little children, who may this story read,
+To idle, silly flattering words, I pray you ne'er give heed:
+Unto an evil counsellor, close heart and ear and eye,
+And take a lesson from this tale, of the Spider and the Fly.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
