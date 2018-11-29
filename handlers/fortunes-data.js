@@ -759,6 +759,8 @@ And now dear little children, who may this story read,
 To idle, silly flattering words, I pray you ne'er give heed:
 Unto an evil counsellor, close heart and ear and eye,
 And take a lesson from this tale, of the Spider and the Fly.
+%
+The leaden albatross of mixed metaphor strikes again!
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
