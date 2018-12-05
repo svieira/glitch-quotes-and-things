@@ -767,6 +767,13 @@ There is the great lesson of 'Beauty and the Beast,' that a thing must be loved 
 The saint preaches sermons by the way he walks, and the way he stands and the way he sits down and the way he picks things up and holds them in his hand.
 %
 If everybody was satisfied with himself there would be no heroes.
+%
+The only real sadness, the only real failure, the only great tragedy in life, is not to become a saint.
+%
+[Prosecutor] Do you know if you are in God's grace?
+[Joan d'Arc] If I am not, may it please God to put me in it; if I am, may it please God to keep me there.
+%
+The Church is a hospital for sinners, after all, not a country club for saints
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
