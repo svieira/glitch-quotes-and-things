@@ -761,6 +761,12 @@ Unto an evil counsellor, close heart and ear and eye,
 And take a lesson from this tale, of the Spider and the Fly.
 %
 The leaden albatross of mixed metaphor strikes again!
+%
+There is the great lesson of 'Beauty and the Beast,' that a thing must be loved before it is lovable.
+%
+The saint preaches sermons by the way he walks, and the way he stands and the way he sits down and the way he picks things up and holds them in his hand.
+%
+If everybody was satisfied with himself there would be no heroes.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
