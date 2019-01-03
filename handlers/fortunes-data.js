@@ -774,6 +774,9 @@ The only real sadness, the only real failure, the only great tragedy in life, is
 [Joan d'Arc] If I am not, may it please God to put me in it; if I am, may it please God to keep me there.
 %
 The Church is a hospital for sinners, after all, not a country club for saints
+%
+The greatest figures of prophecy and sanctity step forth out of the darkest night ... The most decisive turning points in world history are substantially co-determined by souls whom no history book ever mentions.
+~ St. Theresa Benedicta of the Cross (Edith Stine)
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
