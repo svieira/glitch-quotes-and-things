@@ -241,7 +241,7 @@ What's a dinosaur's favourite file format?
 .rar
 %
 1998: Don't get into strangers' cars. Don't meet people from the internet. 
-2016: Literally summon strangers from internet to get into their car.
+${new Date().getFullYear()}: Literally summon strangers from internet to get into their car.
 %
 Talent is hitting a target that nobody else can hit, genius is hitting a target that nobody else can see.
 %
@@ -413,8 +413,6 @@ Claustrophobia.
 I am the beginning of eternity, the end of time and space, the beginning of every end, and the end of every race. What am I?
 %
 We can't entirely eliminate our technical debt. My goal is to refinance it at a lower interest rate.
-%
-I used to be a kleptomaniac but I took something for it
 %
 People think I'm weird because I swallowed an abacus. Don't they realize it’s what's inside that counts?
 %
@@ -777,7 +775,8 @@ The Church is a hospital for sinners, after all, not a country club for saints
 %
 The greatest figures of prophecy and sanctity step forth out of the darkest night ... The most decisive turning points in world history are substantially co-determined by souls whom no history book ever mentions.
 ~ St. Theresa Benedicta of the Cross (Edith Stine)
-
+%
+Ja, das ist mein Subatomarteilchenbeschleunigungsnaturmäßigkeitsuntersuchungsmaschine
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
