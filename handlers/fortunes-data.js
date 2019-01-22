@@ -777,6 +777,10 @@ The greatest figures of prophecy and sanctity step forth out of the darkest nigh
 ~ St. Theresa Benedicta of the Cross (Edith Stine)
 %
 Ja, das ist mein Subatomarteilchenbeschleunigungsnaturmäßigkeitsuntersuchungsmaschine
+%
+Hierarchies are celestial. In hell all are equal.
+%
+The great myth of our times is that technology is communication.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
