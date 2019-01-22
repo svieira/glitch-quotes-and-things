@@ -781,6 +781,8 @@ Ja, das ist mein Subatomarteilchenbeschleunigungsnaturmäßigkeitsuntersuchungsm
 Hierarchies are celestial. In hell all are equal.
 %
 The great myth of our times is that technology is communication.
+%
+Reality is that which, when you stop believing in it, doesn't go away.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
