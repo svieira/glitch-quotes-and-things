@@ -27,7 +27,7 @@ app.post('/appear-in', appearInHandler);
 app.post('/fortune', fortuneHandler);
 
 app.get('/', (request, response) => {
-  response.html(`
+  response.send(`
 <!doctype html>
 <html>
 <head>
@@ -35,7 +35,24 @@ app.get('/', (request, response) => {
 </head>
 <body>
 <h1>Test the bots here</h1>
-
+<label for="endpoint">Robot</label>
+<select id="endpoint">
+<option></option>
+<option value="color">Color Swatches</color>
+<option value="expressions">Expression Evaluator</color>
+<option value="appear-in">appear.in linker</color>
+<option value="fortunes">Fortune-like program</color>
+</select>
+<label for="contents">Message</label>
+<textarea id="contents" placeholder="What your robot sees ..."></textarea>
+<button id="send">Send</button>
+<pre><code id="response"></code></pre>
+<script>
+send.addEventListener("click", e => {
+  e.preventDefault();
+  const urlPostfix
+})
+</script>
 </body>
 </html>
 `.trim());
