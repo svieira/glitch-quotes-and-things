@@ -37,20 +37,30 @@ app.get('/', (request, response) => {
 <h1>Test the bots here</h1>
 <label for="endpoint">Robot</label>
 <select id="endpoint">
-<option></option>
+<option value="">Choose an option ...</option>
 <option value="color">Color Swatches</color>
 <option value="expressions">Expression Evaluator</color>
 <option value="appear-in">appear.in linker</color>
-<option value="fortunes">Fortune-like program</color>
+<option value="fortune">Fortunes and Pithy Sayings</color>
 </select>
 <label for="contents">Message</label>
 <textarea id="contents" placeholder="What your robot sees ..."></textarea>
 <button id="send">Send</button>
 <pre><code id="response"></code></pre>
 <script>
-send.addEventListener("click", e => {
+send.addEventListener("click", async (e) => {
   e.preventDefault();
-  const urlPostfix
+  const urlPostfix = endpoint.value;
+  if (!urlPostfix) return;
+  const response = await fetch(window.location.hostname + '/' + urlPostfix, {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ body: { text: contents.value } })
+  }).then(r => r.json());
+  response.textContents = JSON.stringify(response, null, 2);
 })
 </script>
 </body>
