@@ -785,6 +785,8 @@ The great myth of our times is that technology is communication.
 Reality is that which, when you stop believing in it, doesn't go away.
 %
 I became a physician in order to help save lives. I am at once a physician, a citizen, and a woman, and I am not willing to stand aside and allow the concept of expendable human lives to turn this great land of ours into just another exclusive reservation where only the perfect, the privileged, and the planned have the right to live.
+%
+The first step in understanding that the state does NOT have your best interest at heart is to realize that the state has no heart.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
