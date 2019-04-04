@@ -789,6 +789,8 @@ I became a physician in order to help save lives. I am at once a physician, a ci
 The first step in understanding that the state does NOT have your best interest at heart is to realize that the state has no heart.
 %
 And thou, Melkor, shalt see that no theme may be played that hath not its uttermost source in me, nor can any alter the music in my despite. For he that attempteth this shall prove but mine instrument in the devising of things more wonderful, which he himself hath not imagined.
+%
+If you make active euthanasia a right, it soon becomes a duty. The patient, knowing that he or she can die by choice, will soon feel it incumbent to relieve relatives of the 'burden' of looking after them. When that stage is reached you have removed the patient's choice.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
