@@ -36,7 +36,7 @@ function toRegex(searchString) {
 }
 
 function fortuneText(text) {
-  if (!text.trim()) return choice(FORTUNES);
+  if (!text || !text.trim()) return choice(FORTUNES);
   const test = toRegex(text && text.trim() || '');
   return choice(FORTUNES.filter(f => test.test(f))) || choice(FORTUNES);
 }

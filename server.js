@@ -39,7 +39,7 @@ app.get('/', (request, response) => {
 <select id="endpoint">
 <option value="">Choose an option ...</option>
 <option value="color">Color Swatches</color>
-<option value="expressions">Expression Evaluator</color>
+<option value="expression">Expression Evaluator</color>
 <option value="appear-in">appear.in linker</color>
 <option value="fortune">Fortunes and Pithy Sayings</color>
 </select>
@@ -52,15 +52,19 @@ send.addEventListener("click", async (e) => {
   e.preventDefault();
   const urlPostfix = endpoint.value;
   if (!urlPostfix) return;
-  const response = await fetch(window.location.hostname + '/' + urlPostfix, {
-    method: 'POST',
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ body: { text: contents.value } })
-  }).then(r => r.json());
-  response.textContents = JSON.stringify(response, null, 2);
+  try {
+    const data = await fetch('/' + urlPostfix, {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ body: { text: contents.value || '' } })
+    }).then(r => r.json());
+    response.textContent = JSON.stringify(data, null, 2);
+  } catch (e) {
+    response.textContent = e.message + '\\n' + e.stack;
+  }
 })
 </script>
 </body>
