@@ -59,7 +59,7 @@ send.addEventListener("click", async (e) => {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ body: { text: contents.value || '' } })
+      body: JSON.stringify({ text: contents.value })
     }).then(r => r.json());
     response.textContent = JSON.stringify(data, null, 2);
   } catch (e) {
