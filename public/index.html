@@ -61,6 +61,10 @@ h1 {
   <pre><code id="debugResponse"></code></pre>
 </details>
 <script>
+endpoint.value = (window.location.hash || '').replace(/^#/, '');
+endpoint.addEventListener('change', e => {
+  window.location.hash = e.target.value;
+});
 send.addEventListener("click", async (e) => {
   e.preventDefault();
   const urlPostfix = endpoint.value;

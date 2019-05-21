@@ -44,11 +44,13 @@ module.exports = withHelp({username, icon_url, text: HELP}, function expressionH
     if ('errorMessage' in body) {
       // AWS Lambda error response
       return response.json({
+        icon_url,
         response_type,
         text: template({ expression, type: 'Error', result: body.errorMessage })
       });
     }
     return response.json({
+      icon_url,
       response_type,
       text: template({expression, type: body.type, result: body.value})
     })
