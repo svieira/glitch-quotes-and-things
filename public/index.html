@@ -17,18 +17,18 @@ h1 {
 }
 .message {
   display: flex;
+  padding: 1rem 1.5rem;
 }
 .user-info {
   display: flex;
-  height: 10rem;
-  width: 10rem;
+  min-height: 10rem;
+  min-width: 10rem;
   flex-direction: column;
 }
 #avatar {
   max-width: 100%;
   height: auto;
   margin: 0.5rem;
-  border-radius: 1rem;
 }
 </style>
 </head>
@@ -53,7 +53,10 @@ h1 {
 <div id="renderedResponse">
 </div>
 </div>
-<pre><code id="debugResponse"></code></pre>
+<details>
+  <summary>Response</summary>
+  <pre><code id="debugResponse"></code></pre>
+</details>
 <script>
 send.addEventListener("click", async (e) => {
   e.preventDefault();
