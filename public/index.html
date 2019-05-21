@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<title>Random Bots</title>
+<style>
+html, body {
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: green;
+}
+.message {
+  display: flex;
+}
+#avatar {
+  max-width: 100%;
+  height: auto;
+  margin: 0.5rem;
+}
+</style>
+</head>
+<body>
+<h1>Test the bots here</h1>
+<label for="endpoint">Robot</label>
+<select id="endpoint">
+  <option value="">Choose an option ...</option>
+  <option value="color">Color Swatches</option>
+  <option value="expression">Expression Evaluator</option>
+  <option value="appear-in">appear.in linker</option>
+  <option value="fortune">Fortunes and Pithy Sayings</option>
+</select>
+<label for="contents">Message</label>
+<textarea id="contents" placeholder="What your robot sees ..."></textarea>
+<button id="send">Send</button>
+<div class="message">
+<img id="avatar">
+<span id="username"></span>
+<div id="renderedResponse">
+</div>
+</div>
+<pre><code id="debugResponse"></code></pre>
+<script>
+send.addEventListener("click", async (e) => {
+  e.preventDefault();
+  const urlPostfix = endpoint.value;
+  if (!urlPostfix) return;
+  try {
+    const data = await fetch('/' + urlPostfix, {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ text: contents.value })
+    }).then(r => r.json());
+    debugResponse.textContent = JSON.stringify(data, null, 2);
+    renderedResponse.innerHTML = new commonmark.HtmlRenderer({sourcepos: true}).render(
+      new commonmark.Parser({smart: true}).parse(data.text)
+    );
+    avatar.src = data.icon_url;
+    avatar.hidden = !data.icon_url;
+    username.innerText = data.username || urlPostfix;
+    username.hidden = !(data.username || urlPostfix);
+  } catch (e) {
+    debugResponse.textContent = e.message + '\\n' + e.stack;
+  }
+})
+</script>
+<script src="https://unpkg.com/commonmark@0.29.0/dist/commonmark.min.js" async></script>
+</body>
+</html>

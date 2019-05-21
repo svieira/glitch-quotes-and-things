@@ -66,7 +66,7 @@ const template = ({color, size = SIZES.Large}) => {
 `.trim();
 }
 
-const mdTemplate = (svg, alt='', size=SIZES.Large) => `![${alt}](${toDataUri(svg)} =${size.width}x${size.height})`;
+const mdTemplate = (svg, alt='', size=SIZES.Large) => `![${alt}](${toDataUri(svg)} "=${size.width}x${size.height}")`;
 
 const toDataUri = svg => 'data:image/svg+xml;base64,' + new Buffer(svg).toString('base64');
 
