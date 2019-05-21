@@ -32,6 +32,16 @@ app.get('/', (request, response) => {
 <html>
 <head>
 <title>Random Bots</title>
+<style>
+.message {
+  display: flex;
+}
+#avatar {
+  max-width: 1rem;
+  height: 100%;
+  margin: 0.5rem;
+}
+</style>
 </head>
 <body>
 <h1>Test the bots here</h1>
@@ -73,8 +83,8 @@ send.addEventListener("click", async (e) => {
     );
     avatar.src = data.icon_url;
     avatar.hidden = !data.icon_url;
-    username.innerText = data.username;
-    username.hidden = !data.username;
+    username.innerText = data.username || urlPostfix;
+    username.hidden = !(data.username || urlPostfix);
   } catch (e) {
     debugResponse.textContent = e.message + '\\n' + e.stack;
   }
