@@ -18,6 +18,10 @@ h1 {
 .message {
   display: flex;
   padding: 1rem 1.5rem;
+  border: 1px solid grey;
+  border-radius: 1rem;
+  box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  margin: 3rem 5rem;
 }
 .user-info {
   display: flex;
@@ -46,12 +50,11 @@ h1 {
 <textarea id="contents" placeholder="What your robot sees ..."></textarea>
 <button id="send">Send</button>
 <div class="message">
-<div class="user-info">  
-  <img id="avatar">
-  <span id="username"></span>
-</div>
-<div id="renderedResponse">
-</div>
+  <div class="user-info">  
+    <img id="avatar">
+    <span id="username"></span>
+  </div>
+  <div id="renderedResponse"></div>
 </div>
 <details>
   <summary>Response</summary>
@@ -72,7 +75,7 @@ send.addEventListener("click", async (e) => {
       body: JSON.stringify({ text: contents.value })
     }).then(r => r.json());
     debugResponse.textContent = JSON.stringify(data, null, 2);
-    renderedResponse.innerHTML = new commonmark.HtmlRenderer({sourcepos: true}).render(
+    renderedResponse.innerHTML = new commonmark.HtmlRenderer({sourcepos: true, softbreak: '<br>'}).render(
       new commonmark.Parser({smart: true}).parse(data.text)
     );
     avatar.src = data.icon_url;
