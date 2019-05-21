@@ -6,6 +6,9 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --highlight-color: rgba(100, 150, 100, 0.95);
+}
 html, body {
   min-width: 100vw;
   min-height: 100vh;
@@ -13,7 +16,12 @@ html, body {
   padding: 0;
 }
 h1 {
-  color: green;
+  color: var(--highlight-color);
+}
+blockquote {
+  font-size: 2rem;
+  border-left: 1.25rem solid var(--highlight-color);
+  padding-left: 1.75rem;
 }
 .message {
   display: flex;
@@ -28,11 +36,17 @@ h1 {
   min-height: 10rem;
   min-width: 10rem;
   flex-direction: column;
+  justify-content: flex-start;
+}
+#username {
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
 }
 #avatar {
   max-width: 100%;
   height: auto;
-  margin: 0.5rem;
+  margin: 0.5rem 0.5rem 1.5rem 0.5rem;
 }
 </style>
 </head>
