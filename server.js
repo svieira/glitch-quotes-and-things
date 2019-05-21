@@ -33,6 +33,15 @@ app.get('/', (request, response) => {
 <head>
 <title>Random Bots</title>
 <style>
+html, body {
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: green;
+}
 .message {
   display: flex;
 }
@@ -97,5 +106,5 @@ send.addEventListener("click", async (e) => {
 });
 
 var listener = app.listen(process.env.PORT, function () {
-  console.log('Your app is listening on port ' + listener.address().port);
+  console.log('Your app is listening on PORT ' + listener.address().port);
 });
