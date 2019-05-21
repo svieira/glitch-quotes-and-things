@@ -46,7 +46,13 @@ app.get('/', (request, response) => {
 <label for="contents">Message</label>
 <textarea id="contents" placeholder="What your robot sees ..."></textarea>
 <button id="send">Send</button>
-<pre><code id="response"></code></pre>
+<div class="message">
+<img id="avatar">
+<span id="username"></span>
+<div id="renderedResponse">
+</div>
+</div>
+<pre><code id="debugResponse"></code></pre>
 <script>
 send.addEventListener("click", async (e) => {
   e.preventDefault();
@@ -61,12 +67,20 @@ send.addEventListener("click", async (e) => {
       },
       body: JSON.stringify({ text: contents.value })
     }).then(r => r.json());
-    response.textContent = JSON.stringify(data, null, 2);
+    debugResponse.textContent = JSON.stringify(data, null, 2);
+    renderedResponse.innerHTML = new commonmark.HtmlRenderer({sourcepos: true}).render(
+      new commonmark.Parser({smart: true}).parse(data.text)
+    );
+    avatar.src = data.icon_url;
+    avatar.hidden = !data.icon_url;
+    username.innerText = data.username;
+    username.hidden = !data.username;
   } catch (e) {
-    response.textContent = e.message + '\\n' + e.stack;
+    debugResponse.textContent = e.message + '\\n' + e.stack;
   }
 })
 </script>
+<script src="https://unpkg.com/commonmark@0.29.0/dist/commonmark.min.js" async></script>
 </body>
 </html>
 `.trim());
