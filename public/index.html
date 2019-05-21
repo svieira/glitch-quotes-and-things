@@ -3,6 +3,9 @@
 <head>
 <title>Random Bots</title>
 <style>
+* {
+  box-sizing: border-box;
+}
 html, body {
   min-width: 100vw;
   min-height: 100vh;
@@ -15,10 +18,17 @@ h1 {
 .message {
   display: flex;
 }
+.user-info {
+  display: flex;
+  height: 10rem;
+  width: 10rem;
+  flex-direction: column;
+}
 #avatar {
   max-width: 100%;
   height: auto;
   margin: 0.5rem;
+  border-radius: 1rem;
 }
 </style>
 </head>
@@ -36,8 +46,10 @@ h1 {
 <textarea id="contents" placeholder="What your robot sees ..."></textarea>
 <button id="send">Send</button>
 <div class="message">
-<img id="avatar">
-<span id="username"></span>
+<div class="user-info">  
+  <img id="avatar">
+  <span id="username"></span>
+</div>
 <div id="renderedResponse">
 </div>
 </div>
