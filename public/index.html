@@ -23,6 +23,18 @@ button {
   min-width: 5rem;
   min-height: 3rem;
 }
+.form {
+  display: flex;
+  justify-contents: center;
+  align-items: center;
+}
+.form > dt {
+  margin-left: 2rem;
+}
+.form > dt:hover, .form > dt:hover + dd, .form > dd:hover {
+  cursor: pointer;
+  background-color: #FFFCCC;
+}
 blockquote {
   font-size: 2rem;
   border-left: 1.25rem solid var(--highlight-color);
