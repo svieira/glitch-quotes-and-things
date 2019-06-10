@@ -18,6 +18,11 @@ html, body {
 h1 {
   color: var(--highlight-color);
 }
+button {
+  background-color: transparent;
+  min-width: 5rem;
+  min-height: 3rem;
+}
 blockquote {
   font-size: 2rem;
   border-left: 1.25rem solid var(--highlight-color);
@@ -60,17 +65,21 @@ blockquote {
 </head>
 <body>
 <h1>Test the bots here</h1>
-<label for="endpoint">Robot</label>
-<select id="endpoint">
-  <option value="">Choose an option ...</option>
-  <option value="color">Color Swatches</option>
-  <option value="expression">Expression Evaluator</option>
-  <option value="appear-in">appear.in linker</option>
-  <option value="fortune">Fortunes and Pithy Sayings</option>
-</select>
-<label for="contents">Message</label>
-<textarea id="contents" placeholder="What your robot sees ..."></textarea>
-<button id="send">Send</button>
+<dl class="form">
+  <dt><label for="endpoint">Robot</label></dt>
+  <dd>
+    <select id="endpoint">
+      <option value="">Choose an option ...</option>
+      <option value="color">Color Swatches</option>
+      <option value="expression">Expression Evaluator</option>
+      <option value="appear-in">appear.in linker</option>
+      <option value="fortune">Fortunes and Pithy Sayings</option>
+    </select>
+  </dd>
+  <dt><label for="contents">Message</label></dt>
+  <dd><textarea id="contents" placeholder="What your robot sees ..."></textarea></dd>
+  <dd><button id="send">Send</button></dd>
+</dl>
 <div class="message">
   <div class="user-info">  
     <img id="avatar">
