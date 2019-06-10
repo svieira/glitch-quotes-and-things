@@ -797,6 +797,8 @@ When throwing rocks at seabirds
 I leave no tern unstoned.
 %
 You can't go on "seeing through" things forever. The whole point of seeing through something is to see something through it. To "see through" all things is the same as not to see.
+%
+We should seek the truth without hesitation; and, if we refuse it, we show that we value the esteem of men more than the search for truth.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
