@@ -830,6 +830,11 @@ I was absolutely delighted when the kind people at the Inland Revenue wrote to m
 %
 A book fell on my head.
 I've got only my shelf to blame.
+%
+I asked the librarian if the library had any books about paranoia.
+%
+Dear algebra, please stop asking us to find your _x_. She's never coming back, and don't ask _y_.
+She whispered, "They're behind you..."
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
