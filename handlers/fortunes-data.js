@@ -822,6 +822,14 @@ You distinguish an alligator from a crocodile by paying attention to whether the
 %
 Why was Pavlov's hair so soft?
 Because he conditioned it.
+%
+An MIT linguistics professor was lecturing his class the other day. "In English," he said, "a double negative forms a positive. However, in some languages, such as Russian, a double negative remains a negative. But there isn't a single language, not one, in which a double positive can express a negative."
+A voice from the back of the room piped up, "Yeah, right."
+%
+I was absolutely delighted when the kind people at the Inland Revenue wrote to me recently, telling me that my tax return was "outstanding", particularly since I can't even remember sending it in!
+%
+A book fell on my head.
+I've got only my shelf to blame.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
