@@ -816,6 +816,12 @@ I tell dad jokes, but I have no kids
 I'm a faux pa
 %
 I once made a belt out of watches. It was a complete waist of time.
+%
+SCIENCE TIP
+You distinguish an alligator from a crocodile by paying attention to whether the animal sees you later, or in a while.
+%
+Why was Pavlov's hair so soft?
+Because he conditioned it.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
