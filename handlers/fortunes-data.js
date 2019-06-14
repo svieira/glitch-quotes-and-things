@@ -801,6 +801,21 @@ You can't go on "seeing through" things forever. The whole point of seeing throu
 We should seek the truth without hesitation; and, if we refuse it, we show that we value the esteem of men more than the search for truth.
 %
 When statesmen forsake their own private conscience for the sake of their own public duties, they lead their country by a short route to chaos.
+%
+They told me I'd never be good at poetry because I'm dyslexic, but so far I've made 3 jugs and a vase!
+%
+Why does it cost $1.50 to put air in your tires?
+Inflation.
+%
+I told my friends I was marrying an x-ray technician. They were pretty blunt about it: "she seems great, but I don't know what she sees in you."
+%
+When you are marching off to war, don't let anyone shame you for carrying a glaive instead of a pike.
+Don't give in to spear pressure.
+%
+I tell dad jokes, but I have no kids
+I'm a faux pa
+%
+I once made a belt out of watches. It was a complete waist of time.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
