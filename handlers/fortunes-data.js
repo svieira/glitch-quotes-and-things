@@ -840,7 +840,8 @@ The man who regards his own life and that of his fellow creatures as meaningless
 %
 God is over all things, under all things; outside all; within, but not enclosed; without, but not excluded; above, but not raised up; below, but not depressed; wholly above, presiding; wholly without, embracing; wholly within, filling.
 %
-`.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
+A man's rights rest in three boxes: the ballot box, the jury box, and the cartridge box.
+-Frederick Douglass.`.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
 // and here https://news.ycombinator.com/item?id=18390144
