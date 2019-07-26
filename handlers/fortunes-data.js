@@ -844,6 +844,8 @@ A man's rights rest in three boxes: the ballot box, the jury box, and the cartri
 -Frederick Douglass.
 %
 Machine Learning: it's money laundering for bias and unreasonable discrimination.
+%
+Before my surgery my anaesthetist offered to knock me out with gas or a boat paddle.  It was an ether/oar situation.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
