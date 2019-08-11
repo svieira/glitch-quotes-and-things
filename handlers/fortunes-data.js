@@ -832,9 +832,9 @@ A book fell on my head.
 I've got only my shelf to blame.
 %
 I asked the librarian if the library had any books about paranoia.
+She whispered, "They're behind you..."
 %
 Dear algebra, please stop asking us to find your _x_. She's never coming back, and don't ask _y_.
-She whispered, "They're behind you..."
 %
 The man who regards his own life and that of his fellow creatures as meaningless is not merely unhappy but hardly fit for life.
 %
