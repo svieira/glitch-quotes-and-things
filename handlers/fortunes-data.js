@@ -846,6 +846,9 @@ A man's rights rest in three boxes: the ballot box, the jury box, and the cartri
 Machine Learning: it's money laundering for bias and unreasonable discrimination.
 %
 Before my surgery my anaesthetist offered to knock me out with gas or a boat paddle.  It was an ether/oar situation.
+%
+Photos do not lie, it is said. But frequently they tell partial truths. They tear moments out of time's flowing river and separate them from what has come before and what will follow. They can misrepresent as well as represent.
+%
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
