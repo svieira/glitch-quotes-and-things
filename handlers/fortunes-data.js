@@ -881,6 +881,35 @@ HEALTH WARNING: Care should be taken when lifting this product, since its mass, 
 %
 IMPORTANT NOTICE TO PURCHASERS: The entire physical universe, including this product, may one day collapse back into an infinitesimally small space. Should another universe subsequently re-emerge, the existence of this product in that universe cannot be guaranteed.
 %
+Speak as little as possible about yourself. #humility
+%
+Keep busy with your own affairs and not those of others. #humility
+%
+Avoid curiosity #humility
+%
+Do not interfere in the affairs of others. #humility
+%
+Accept small irritations with good humor. #humility
+%
+Do not dwell on the faults of others. #humility
+%
+Accept censures even if unmerited. #humility
+%
+Give in to the will of others. #humility
+%
+Accept insults and injuries. #humility
+%
+Accept contempt, being forgotten and disregarded. #humility
+%
+Be courteous and delicate even when provoked by someone. #humility
+%
+Do not seek to be admired and loved. #humility
+%
+Do not protect yourself behind your own dignity. #humility
+%
+Give in, in discussions, even when you are right. #humility
+%
+Choose always the more difficult task. #humility
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
