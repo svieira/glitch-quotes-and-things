@@ -910,6 +910,7 @@ Do not protect yourself behind your own dignity. #humility
 Give in, in discussions, even when you are right. #humility
 %
 Choose always the more difficult task. #humility
+We do not really want a religion that is right where we are right. What we want is a religion that is right where we are wrong.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
