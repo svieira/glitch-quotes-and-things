@@ -916,6 +916,12 @@ We do not really want a religion that is right where we are right. What we want 
 [Christianity] has not merely told this truth or that truth, but has revealed itself as a truth-telling thing. All other philosophies say the things that plainly seem to be true; only this philosophy has again and again said the thing that does not seem to be true, but is true. Alone of all creeds it is convincing where it is not attractive.
 %
 Morality is a necessary spring of popular government
+%
+The most important single aspect of software development is to be clear about what you are trying to build.
+%
+There are no "cookbook" methods that can replace intelligence, experience and good taste in design and programming.
+%
+Design and programming are human activities; forget that and all is lost.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
