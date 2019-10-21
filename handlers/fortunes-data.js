@@ -922,6 +922,8 @@ The most important single aspect of software development is to be clear about wh
 There are no "cookbook" methods that can replace intelligence, experience and good taste in design and programming.
 %
 Design and programming are human activities; forget that and all is lost.
+%
+Censorship is the opium of government
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
