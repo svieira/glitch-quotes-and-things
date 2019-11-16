@@ -924,6 +924,21 @@ There are no "cookbook" methods that can replace intelligence, experience and go
 Design and programming are human activities; forget that and all is lost.
 %
 Censorship is the opium of government
+%
+[Regarding death] we struggle and resist like self-willed slaves and are brought into the Lord’s presence with sorrow and lamentation, not freely consenting to our departure, but constrained by necessity.
+
+Why then do we pray for the kingdom of heaven to come if this earthly bondage pleases us? … If we should rather serve the devil here than reign with Christ?
+
+The world hates Christians, so why give your love to it instead of following Christ, who loves you and has redeemed you? So banish the fear of death and think of the eternal life that follows. That will show people that we really live our faith.
+
+Who of us, if he had long been a sojourner in a foreign land would not desire to return to his native country? Who of us, when he had begun to sail there would not wish for a prosperous wind to carry him to his desired home with speed, that he might sooner embrace his friends and relatives? We must account paradise our country
+%
+People also have the right not to know and it’s a much more valuable one. The right not to have their divine souls stuffed with gossip, nonsense, vain talk. A person who works and leads a meaningful life does not need this excessive burdening flow of information.
+%
+A right not-to-know the vain and shallow is rooted in an imperative to savor the substantial and enduring.
+%
+Man’s ability to see is in decline. Those who nowadays concern themselves with culture and education will experience this fact again and again. We do not mean here, of course, the physiological sensitivity of the human eye. We mean the spiritual capacity to perceive the visible reality as it truly is.
+%
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
