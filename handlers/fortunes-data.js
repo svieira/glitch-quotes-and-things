@@ -937,7 +937,7 @@ People also have the right not to know and it’s a much more valuable one. The 
 %
 A right not-to-know the vain and shallow is rooted in an imperative to savor the substantial and enduring.
 %
-Man’s ability to see is in decline. Those who nowadays concern themselves with culture and education will experience this fact again and again. We do not mean here, of course, the physiological sensitivity of the human eye. We mean the spiritual capacity to perceive the visible reality as it truly is.
+Man's ability to see is in decline. Those who nowadays concern themselves with culture and education will experience this fact again and again. We do not mean here, of course, the physiological sensitivity of the human eye. We mean the spiritual capacity to perceive the visible reality as it truly is.
 %
 People are incessantly extolling the institutions of antiquity, and they will not perceive that the Christian worship is the only relic of that antiquity which has been transmitted to us.
 %
@@ -946,6 +946,8 @@ In te, Domine speravi non confundar in aeternum
 O Lord, in thee have I trusted; let me never be confounded
 %
 Society cannot exist unless a controlling power be placed somewhere; and the less of it there is within, the more there must be without. It is ordained in the eternal constitution of things that men of intemperate minds cannot be free. Their passions forge their fetters.
+%
+If high availability is like wearing both belts and suspenders, a dead man's switch would be like paying someone to follow you around to let you know if your pants fall down.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
