@@ -948,6 +948,8 @@ O Lord, in thee have I trusted; let me never be confounded
 Society cannot exist unless a controlling power be placed somewhere; and the less of it there is within, the more there must be without. It is ordained in the eternal constitution of things that men of intemperate minds cannot be free. Their passions forge their fetters.
 %
 If high availability is like wearing both belts and suspenders, a dead man's switch would be like paying someone to follow you around to let you know if your pants fall down.
+%
+Software engineering is what happens to programming when you add time and other programmers.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
