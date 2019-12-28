@@ -950,6 +950,9 @@ Society cannot exist unless a controlling power be placed somewhere; and the les
 If high availability is like wearing both belts and suspenders, a dead man's switch would be like paying someone to follow you around to let you know if your pants fall down.
 %
 Software engineering is what happens to programming when you add time and other programmers.
+%
+The wise men of antiquity, when they wished to make the whole world peaceful and happy, first put their own States into proper order. Before putting their States into proper order, they regulated their own families. Before regulating their families, they regulated themselves. Before regulating themselves, they tried to be sincere in their thoughts. Before being sincere in their thoughts, they tried to see things exactly as they really were.
+%
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
