@@ -953,6 +953,9 @@ Software engineering is what happens to programming when you add time and other 
 %
 The wise men of antiquity, when they wished to make the whole world peaceful and happy, first put their own States into proper order. Before putting their States into proper order, they regulated their own families. Before regulating their families, they regulated themselves. Before regulating themselves, they tried to be sincere in their thoughts. Before being sincere in their thoughts, they tried to see things exactly as they really were.
 %
+A just law is a man made code that squares with the moral law or the law of God. An unjust law is a code that is out of harmony with the moral law… Any law that uplifts human personality is just. Any law that degrades human personality is unjust.
+~ Martin Luther King Jr.
+%
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
