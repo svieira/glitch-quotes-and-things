@@ -956,6 +956,8 @@ The wise men of antiquity, when they wished to make the whole world peaceful and
 A just law is a man made code that squares with the moral law or the law of God. An unjust law is a code that is out of harmony with the moral law… Any law that uplifts human personality is just. Any law that degrades human personality is unjust.
 ~ Martin Luther King Jr.
 %
+Four things come not back. The spoken word, the sped arrow, the past life, and the neglected opportunity.
+%
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
