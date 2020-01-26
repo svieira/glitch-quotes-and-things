@@ -958,6 +958,8 @@ A just law is a man made code that squares with the moral law or the law of God.
 %
 Four things come not back. The spoken word, the sped arrow, the past life, and the neglected opportunity.
 %
+This reminds me of the conversation I had with the vocations director at the monastery about how much the monks pay attention to the news, that they might know the things they ought to pray about: "The news," Fr. Steven said, "is this: we are fallen, and He is risen."
+%
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
