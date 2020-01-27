@@ -961,6 +961,9 @@ Four things come not back. The spoken word, the sped arrow, the past life, and t
 This reminds me of the conversation I had with the vocations director at the monastery about how much the monks pay attention to the news, that they might know the things they ought to pray about: "The news," Fr. Steven said, "is this: we are fallen, and He is risen."
 %
 All human nature vigorously resists grace because grace changes us and the change is painful
+%
+Do not lose heart, even if you should discover that you lack qualities necessary for the work to which you are called. He who called you will not desert you, but the moment you are in need he will stretch out his saving hand.
+%
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
