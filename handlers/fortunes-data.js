@@ -970,6 +970,7 @@ Do not lose heart, even if you should discover that you lack qualities necessary
 // and here https://news.ycombinator.com/item?id=18390144
 // and here https://github.com/globalcitizen/taoup
 // and here https://github.com/topics/fortune
+// and here https://henrikwarne.com/2019/04/03/more-good-programming-quotes-part-3/
 
 const ICONS = `
 https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fcookie.png?1501040330593
