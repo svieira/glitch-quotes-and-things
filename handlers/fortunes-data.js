@@ -964,6 +964,14 @@ All human nature vigorously resists grace because grace changes us and the chang
 %
 Do not lose heart, even if you should discover that you lack qualities necessary for the work to which you are called. He who called you will not desert you, but the moment you are in need he will stretch out his saving hand.
 %
+My D&D character can't decide whether to join the Bards' College or the Thieves' Guild. He'll just have to weigh the prose and the cons, I guess...
+%
+I had a friend who was addicted to brake fluid; he said he could stop any time he wanted to.
+%
+Q: Where did Captain Hook get his hook?
+A: At a second hand store.
+%
+I saw a microbiologist today. He was much bigger than I imagined.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
