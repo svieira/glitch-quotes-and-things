@@ -972,6 +972,17 @@ Q: Where did Captain Hook get his hook?
 A: At a second hand store.
 %
 I saw a microbiologist today. He was much bigger than I imagined.
+%
+Which weighs more, a gallon of water or a gallon of butane?
+Water. Butane is lighter fluid.
+%
+Wait ... when does a joke become a "dad joke"?
+When it becomes apparent.
+%
+Bread is like the sun
+It rises in the yeast and it sets in the waist
+%
+
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
