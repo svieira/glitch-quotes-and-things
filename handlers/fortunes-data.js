@@ -982,6 +982,9 @@ When it becomes apparent.
 Bread is like the sun
 It rises in the yeast and it sets in the waist
 %
+I got "jacuzzi" and "yakuza" mixed up
+Now I'm in hot water with the Japanese mafia
+%
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
