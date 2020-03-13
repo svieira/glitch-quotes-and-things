@@ -985,6 +985,11 @@ It rises in the yeast and it sets in the waist
 I got "jacuzzi" and "yakuza" mixed up
 Now I'm in hot water with the Japanese mafia
 %
+Society is suffering from tolerance of right and wrong. Truth and error. Good and evil. Christ and chaos.
+About these things we must be intolerant!
+Are architects tolerant of using sand as foundations for skyscrapers?
+Intolerance of error is the foundation of society!
+%
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
