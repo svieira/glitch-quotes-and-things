@@ -990,6 +990,7 @@ About these things we must be intolerant!
 Are architects tolerant of using sand as foundations for skyscrapers?
 Intolerance of error is the foundation of society!
 %
+When you approach the tabernacle remember He has been waiting for you for twenty centuries.
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
