@@ -1,6 +1,6 @@
 dependencies:
   body-parser: 1.19.0
-  color: 3.1.1
+  color: 3.1.2
   express: 4.17.1
   node-fetch: 2.6.0
 packages:
@@ -61,13 +61,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-dC2C5qeWoYkxki5UAXapdjqO672AM4vZuPGRQfO8b5HKuKGBbKWpITyDYN7TOFKvRW7kOgAn3746clDBMDJyQw==
-  /color/3.1.1:
+  /color/3.1.2:
     dependencies:
       color-convert: 1.9.3
       color-string: 1.5.3
     dev: false
     resolution:
-      integrity: sha512-PvUltIXRjehRKPSy89VnDWFKY58xyhTLyxIg21vwQBI6qLwZNPmC8k3C1uytIgFKEpOIzN4y32iPm8231zFHIg==
+      integrity: sha512-vXTJhHebByxZn3lDvDJYw4lR5+uB3vuoHsuYA5AKuxRVn5wzzIfQKGLBmgdVRHKTJYeK5rvJcHnrd0Li49CFpg==
   /content-disposition/0.5.3:
     dependencies:
       safe-buffer: 5.1.2
@@ -455,6 +455,6 @@ shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   body-parser: ^1.19.0
-  color: ^3.1.1
+  color: ^3.1.2
   express: ^4.17.1
   node-fetch: ^2.6.0
