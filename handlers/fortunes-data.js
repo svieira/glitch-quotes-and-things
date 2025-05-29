@@ -999,6 +999,63 @@ Had my patience tested the other day.
 
 Turns out, I'm negative.
 %
+If a man is with God and God is with him, clearly he is able to say, “Though I walk through the midst of the shadow of death, I will fear no evil, for Thou art with me.” “The shadow of death” is human life.
+— St. Maximos the Confessor
+%
+We do not fix our affections on borrowed goods, because we know that they must soon be returned to the owner. All the goods of this earth are lent to us.
+— St. Alphonsus Liguori
+%
+Death, properly speaking, is this: for the soul to be unharnessed from divine grace and to be yoked to sin. . . . He who is frightened of this death and has preserved himself from it will not be alarmed by the oncoming death of the body, for in him the true life dwells, and bodily death, so far from taking true life away, renders it inalienable.
+— St. Gregory Palamas
+%
+Live in such a way that when you die, you don’t die.
+— St. Augustine
+%
+The good God does not wish us to despair. He shows us the good thief, touched with repentance, dying near Him on the cross. But he is the only one. See, he dies near the good God. Can we hope to be near Him at our last moment? . . . See, my children, to die well we must live well. To live well, we must seriously examine ourselves. . . . By this means, my children, we cannot fail to correct ourselves, and to become fervent Christians in a short time. Then, when death comes, we are quite ready; we are happy to go to Heaven.
+— St. Jean Vianney
+%
+The best way to prepare for death is to spend every day of life as though it were your last.
+— St. Philip Neri
+%
+A holy hermit being asked when dying how he could be so cheerful, said: “I have always kept death before my eyes; and therefore, now that it has arrived, I see nothing new in it.”
+— St. Alphonsus Liguori
+%
+“We give glory to you, Lord, who raised up your cross to span the jaws of death like a bridge by which souls might pass from the region of the dead to the land of the living. . . . You are incontestably alive. Your murderers sowed your living body in the earth as farmers sow grain, but it sprang up and yielded an abundant harvest of men raised from the dead.”
+– Saint Ephrem the Syrian
+%
+The devil will come to tempt the dying Christian, but his angel-guardian will come to strengthen him. His holy advocates will come: St. Michael, whom God has appointed to defend his faithful servants in their last combat with Hell, will come; the divine Mother will come to chase away the devils, and to protect her servant; above all, Jesus Christ will come to guard against every temptation of Hell, the innocent or penitent sheep for whose salvation he has given his life.
+— St. Alphonsus Liguori
+%
+It is not Death that will come to fetch me, it is the good God. Death is no phantom, no horrible specter, as presented in pictures. In the catechism it is stated that death is the separation of soul and body, that is all! Well, I am not afraid of a separation which will unite me to the good God forever.
+— St. Therese of Lisieux
+%
+Unless were place our head on the heart of Christ, like St. John, we will not have the strength to follow him to the Cross.
+%
+Who will be able to be enraptured in God? The person who greatly desired to know Him while on earth, who withdrew his gaze from temporal goods to settle it on lasting ones, who denied himself the satisfaction of reading worldly, trivial things and refused to nourish his intelligence and imagination on what is transitory.
+~ Blessed James Alberione
+%
+Why then, man, are you so worthless in your own eyes and yet so precious to God? Why render yourself such dishonor when you are honored by him? Why do you ask how you were created and do not seek to know why you were made? Was not this entire visible universe made for your dwelling? It was for you that the light dispelled the overshadowing gloom; for your sake was the night regulated and the day measured, and for you were the heavens embellished with the varying brilliance of the sun, the moon and the stars. The earth was adorned with flowers, groves and fruit; and the constant marvelous variety of lovely living things was created in the air, the fields, and the seas for you, lest sad solitude destroy the joy of God’s new creation. And the Creator still works to devise things that can add to your glory. He has made you in his image that you might in your person make the invisible Creator present on earth; he has made you his legate, so that the vast empire of the world might have the Lord’s representative. Then in his mercy God assumed what he made in you; he wanted now to be truly manifest in man.
+~ St. Peter Chrysologus From a Homily on the Nativity of Christ.
+%
+"In the Lord’s garden are to be found not only the roses of his martyrs. In it there are also the lilies of the virgins, the ivy of wedded couples, and the violets of widows. On no account may any class of people despair, thinking that God has not called them."
+~ St. Augustine
+%
+It is unbecoming for young men to utter maxims.
+~ Aristotle
+%
+The truth does not change according to our ability to stomach it emotionally.
+%
+The truth sound like hate to those who hate the truth.
+~ Todd Wagner
+%
+He is not rich who is surrounded by many possessions, but he who does not need many possessions; and he is not poor who possesses nothing, but he who requires many things.
+~ St. John Chrysostom
+%
+... it was homemaking that mattered. Every home was a brick in the great wall of decent living that men erected over and over again as a bulwark against the perpetual flooding in of evil. But women made the bricks, and the durableness of each civilization depended upon their quality, and it was no good weakening oneself for the brick-making by thinking too much about the flood.
+~ Elizabeth Goudge from Pilgrim’s Inn
+%
+I don’t know what I may seem to the world, but as to myself, I seem to have been only like a boy playing on the sea shore, and diverting myself in now and then finding a smoother pebble or a prettier shell than ordinary, whilst the great ocean of truth lay all undiscovered around me.
+~ Sir Isaac Newton
 `.split(/\n%\n/g).map(t => t.trim()).filter(s => !!s).map(s => s.indexOf(">") === 0 ? s : '>' + s.split('\n').join('\n>'));
 
 // More can be found here: http://quotes.cat-v.org/programming/
@@ -1006,6 +1063,7 @@ Turns out, I'm negative.
 // and here https://github.com/globalcitizen/taoup
 // and here https://github.com/topics/fortune
 // and here https://henrikwarne.com/2019/04/03/more-good-programming-quotes-part-3/
+// and here https://news.ycombinator.com/item?id=24436135
 
 const ICONS = `
 https://cdn.glitch.com/8568201b-555b-4c6e-8e58-9e525d75d1d7%2Fcookie.png?1501040330593
